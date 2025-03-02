@@ -1,0 +1,14 @@
+URL: 
+https://www.youtube.com/watch?v=ELSm-G201Ls&t=2354s
+
+echo "# Curso_de_HTML_-CSS-SoyDalton-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mjw2041/Curso_de_HTML_-CSS-SoyDalton-.git
+git push -u origin main
+
+git remote add origin https://github.com/mjw2041/Curso_de_HTML_-CSS-SoyDalton-.git
+git branch -M main
+git push -u origin main
