@@ -2,5 +2,37 @@ p{
   color: red;
   font-family: sans-serif,'Times New Roman', Times, serif;
   font-size: 16px;
-  font-weight: 300;  /* Ancho del font */
+  font-weight: bold;  
+  /** Grosor del font  
+      bold ---> pone la etiqueta en negrita = 700
+      bolder ---> hace mas gruesa 
+  */
+  font-style: italic;
+  text-align: left;
+  /**
+        alinea el texto en su contenedor
+        justify ---> se justifica
+        start  ---> Se alinea segun el pais donde se despliega la pagina
+  */
+  text-decoration: none; /* decora la linea */
+  line-height: 1; /* especiado entre linea */
+  letter-spacing: 1px;  /* espaciado entre letres;*/
+  text-transform:initial; /* Mayuscula - Minuscula etc */
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Akronim;
+}
+
+h2{
+  font-family:  Montserrat;
+  font-weight: 400;
+  color: blueviolet;
+}
+
+
+span {
+   color:blueviolet;
+   text-decoration: line-through;
 }
