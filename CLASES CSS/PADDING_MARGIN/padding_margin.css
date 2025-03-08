@@ -1,0 +1,39 @@
+.formulario{
+      background-color: red;
+      padding: 30px;
+      /*
+      padding-top: 20px; /* Bordes interiores */
+      /*padding-bottom: 20px;
+      padding-left: 20px;
+      padding-left: 20px;
+      */
+      /* Se puede simplificar 
+
+         padding: 20px
+         padding: 20px 20px 20px 20px 
+         padding: 20px 20px ( primer Valor arriba-abajo segundo Valor izq-derecha 
+     */    
+}
+
+.formulario_input {
+      padding: 9px 12px;
+      width: 100%;
+      background: black;
+      color: red;
+      margin: 10px; /* Separacion de las cajas*/
+}
+
+.formulario_submit {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: red;
+      color: white;
+      width: 50%;
+}
+
+.box{
+      background: blue;
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+}

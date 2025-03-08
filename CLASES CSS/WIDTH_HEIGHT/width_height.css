@@ -1,0 +1,18 @@
+h1 {
+      color: red; /* Color de la fuente */      
+}
+
+div {
+      background-color: red /* color de fondo */;      
+      width: 200px; /* 200 pixeles */
+      height: 200px;
+}
+
+input {
+      width: 50%; /* El total de la pantalla */
+      box-sizing: border-box; /* Le agrega un borde */
+}
+
+form {      
+      width: 300px;
+}
