@@ -1,0 +1,48 @@
+/*
+RGB (Rojo, Verde, Azul)
+Se le puede agregar un parametro mas para la opacidad
+*/
+.box-rgb {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(255,0,0); 
+      margin: 20px;
+}
+
+/*
+Hexadecimales
+Se le puede agregar un parametro mas para la opacidad
+*/
+.box-hexa {
+      width: 100px;
+      height: 100px;
+      background-color: #00ff00;
+        /* En Hecha decimal, los dos primero caracteres red, blu el 3 y 4, green los dos ultimos*/
+        /* Se puede reducir a tres caractares  background-color: #f00;
+        /* El cuarto caracter o noveno es la opacidad */
+      margin: 20px;
+}
+
+/** 
+   HSL (Tono, Saturación, Luminosidad)
+   Especificas el color en términos de su tono (en grados de 0 a 360), saturación (de 0% a 100%) y luminosidad (de 0% a 100%).
+   Se le puede agregar un parametro mas para la opacidad   
+   Ver: https://htmlcolorcodes.com/es/selector-de-color/
+*/
+
+.box-HSL {
+      background: hsl(240, 40%, 80%);
+        /* En Hecha decimal, los dos primero caracteres red, blu el 3 y 4, green los dos ultimos*/
+        /* Se puede reducir a tres caractares  background-color: #f00 una color por cada color primario;
+        /* El cuarto caracter o noveno es la opacidad */
+      margin: 20px;
+      margin-left: 100px;
+      text-align: center;
+      padding: 20px 50px;
+      border-top: 2px solid hsl(240, 40%, 20%);;
+      color: white;
+      font-family: sans-serif;
+      font-weight: bold;
+      
+}
+

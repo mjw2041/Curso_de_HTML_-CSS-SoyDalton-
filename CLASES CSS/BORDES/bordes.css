@@ -1,0 +1,33 @@
+div {
+      background-color: red;
+      width: 300px;
+      height: 50px;
+      margin: auto;      
+      line-height: 50px; /* Establece el tamano de la linea */
+      text-align: center;     
+      margin-bottom: 30px; 
+}
+
+div {
+      border-width: 20px;
+      border-style: solid;
+      border-color: black;
+      /*
+            Si utilizo la sentencia border reemplazo la 3 de arriba
+            border: width style color
+      */
+      border-radius:8px;
+         /* 
+            Si le argrego porcentaje (%) cambia la forma del redondeado
+               ---> 30 px es distinto 30%
+               ---> px es el mas usado
+         */
+}
+
+input {
+      margin: 5px;
+      padding: 6px 9px;
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: whitesmoke;
+}

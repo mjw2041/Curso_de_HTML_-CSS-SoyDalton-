@@ -1,0 +1,23 @@
+body {
+      margin: 0px;
+}
+.box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 20px
+}
+
+.box-default {
+      box-sizing: content-box;
+      /* Este sentencia hce que la caja se agrande con el padding y el border */
+      padding: 25px;
+      border: 10px solid black ;
+}
+
+.box-new {
+      box-sizing: border-box; 
+       /* Este sentencia hce que la caja no se agrande a pesar los padding y lo border */
+      padding: 25px;
+      border: 10px solid black ;
+}
