@@ -1,0 +1,91 @@
+/*
+  Unidades de medidas
+  px (píxel):
+  La unidad más común en CSS. Un píxel es la unidad de medida más pequeña en la pantalla, y se usa para definir tamaños exactos.
+
+  pt (punto):
+  Un punto es 1/72 de una pulgada. Se usa más comúnmente en la impresión.
+
+  cm (centímetros):
+  Un centímetro, utilizado principalmente para la impresión.
+
+  mm (milímetros):
+  Un milímetro, también usado en la impresión.
+
+  in (pulgada):
+  Una pulgada, equivalente a 2.54 cm.
+
+  pc (pica):
+  Una pica equivale a 12 puntos, o aproximadamente 1/6 de una pulgada.
+
+  Relativas
+  em:
+  Depende del tamaño de la fuente del elemento actual. 1em es igual al tamaño de la fuente actual.
+  Se utiliza principalmente para definir tamaños relativos a la fuente.
+
+  rem (root em):
+  Similar a em, pero en este caso se refiere al tamaño de la fuente de la raíz del documento (<html>).
+  Esto hace que sea más predecible que em
+
+  % (porcentaje):
+ Se usa para definir valores en relación con el valor de otro elemento, como el ancho de un contenedor.
+ 
+ vw (viewport width):
+ El 1vw es el 1% del ancho de la ventana de visualización (pantalla).
+
+ vh (viewport height):
+ El 1vh es el 1% de la altura de la ventana de visualización.
+
+ vmin:
+ El valor de 1vmin es el 1% del tamaño más pequeño entre el ancho y la altura de la ventana de visualización.
+
+ vmax:
+ El valor de 1vmax es el 1% del tamaño más grande entre el ancho y la altura de la ventana de visualización.
+
+ ch:
+El valor de 1ch es el ancho del "0" en la fuente utilizada.
+
+ex:
+El valor de 1ex es la altura de la "x" minúscula en la fuente utilizada.
+
+*/
+body{
+      font-size: 40px
+}
+
+div{
+      background: #ededed;
+      /*padding: 20cm;*/
+      font-family: sans-serif;      
+      /*margin: 400px;*/
+      font-size: 20px;
+}
+
+h1{
+      margin: 0px;
+      font-size: 20px;
+      margin-bottom: 50px;
+}
+
+span {
+      color:#999;
+      font-size: 16px;
+      font-weight: 100;
+
+}
+
+p{      
+      color:#555;      
+      background: red;
+      margin: 0;
+      /*width: 50%; */   
+      font-size: 2em /* Tamaño relativo al elemento padre*/
+}
+
+.em {
+      margin-top: 60px;
+      font-size: 1rem;  
+     background-color: blue;     
+     height: 50vh; /* 50 % del tamaño de la ventana de visualizacion */
+     width: 50vw; /* 50 % del tamaño de la ventana de visualizacion */
+}
