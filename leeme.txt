@@ -1,5 +1,5 @@
 URL: 
-https://www.youtube.com/watch?v=ELSm-G201Ls&t=2354s
+https://www.youtube.com/watch?v=ELSm-G201Ls&t=17478s
 
 echo "# Curso_de_HTML_-CSS-SoyDalton-" >> README.md
 git init
@@ -14,3 +14,12 @@ git branch -M main
 git push -u origin main
 
 --------------------------------------------------------------------------------
+Para Exportar ( Clonar )
+git clone https://github.com/mjw2041https://github.com/mjw2041/Curso_de_HTML_-CSS-SoyDalton-.git
+cd Curso_de_HTML_-CSS-SoyDalton-
+git checkout -b <nombre-de-tu-rama>  # Opcional: crear y cambiar a una nueva rama
+# Editar el archivo con tu editor de texto
+git add <nombre-del-archivo>         # O git add . para agregar todos los cambios
+git commit -m "<Tu mensaje descriptivo>"
+git push origin <nombre-de-tu-rama>  # O git push origin main/master si trabajaste en la rama principal
+
