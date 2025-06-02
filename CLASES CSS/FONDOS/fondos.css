@@ -1,3 +1,11 @@
+/**
+   la propiedad background engloba todas las propiedades background como por ejemplo  background-color
+
+*/
+
+.body {
+      background-color: greenyellow;
+}
 .box{
       width: 200px;
       height: 200px;
