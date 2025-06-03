@@ -24,3 +24,4 @@ git commit -m "<Tu mensaje descriptivo>"
 git push origin <nombre-de-tu-rama>  # O git push origin main/master si trabajaste en la rama principal
 
 Prueba desde Santiago PC
+Ahora desde git hub
