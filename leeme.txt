@@ -23,3 +23,4 @@ git add <nombre-del-archivo>         # O git add . para agregar todos los cambio
 git commit -m "<Tu mensaje descriptivo>"
 git push origin <nombre-de-tu-rama>  # O git push origin main/master si trabajaste en la rama principal
 
+Prueba desde Santiago PC
