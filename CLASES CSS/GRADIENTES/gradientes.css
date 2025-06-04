@@ -1,0 +1,9 @@
+ 
+ .box{
+      width: 400px;
+      height: 400px;
+      background-color: red;
+      background: linear-gradient(red, blue);
+      /* background: linear-gradient(to right, red, blue); */
+
+ }
