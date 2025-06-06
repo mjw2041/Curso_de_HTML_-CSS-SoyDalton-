@@ -3,13 +3,41 @@ body{
 }
 
 .box{
-      width: 300px;
-      height: 400px;
+      width: 280px;
+      /*height: 360px;*/
       background: #e2e2e2;            
       margin: auto;
       margin-top: 50px;
-      /*box-shadow: 20px 10px 50px 10px black;*/
-      /*box-shadow: horizontal vertical dispersion intensidad color */      
       box-shadow: 0px 0px 40px 0px #0007; /* Sombre recomendada */            
+      padding: 20px;      
+      padding-top: 10px; /* Para que el padding no afecte al tamaño del elemento */
+      box-sizing: border-box; /* Para que el padding no afecte al tamaño del elemento */
+      font-family: sans-serif;      
+      color: #444;
+      text-align: center;
+
+      /*box-shadow: 20px 10px 50px 10px black;*/
+      /*box-shadow: horizontal vertical desenfoque intensidad color */      
+      
 }
 
+p{
+      list-style: none;
+      text-align: justify;
+      line-height: 1.4 ;
+      font-size: 14px;
+      text-shadow: 0 0 40px red; /* Sombra de texto */;
+      /*text-shadow: horizontal vertical desenfoque color*/
+
+}
+
+img{
+      width: 160px;
+      border-radius: 10%; /* Para que la imagen sea redonda */
+      margin: auto;
+      box-shadow: 0px 0px 40px 0px red; /* Sombre recomendada */
+     /* filter: drop-shadow(0px 0px 40px red);-*/ /* Sombra de imagen */       
+     /*filter: drop-shadow(horizontal vertical desenfoque color);*/
+     /*Esto se usar en las imagenes que tiene canal alfa, ya que la sombra se aplica al canal alfa, no al color de fondo.*/
+     /* por ejemplo, si la imagen es un png con fondo transparente, la sombra se aplicará al contorno de la imagen. */
+}
