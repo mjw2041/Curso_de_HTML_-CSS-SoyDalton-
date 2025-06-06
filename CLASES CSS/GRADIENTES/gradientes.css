@@ -8,14 +8,14 @@ body{
       background-color: red;
       margin: auto;      
       /*background: linear-gradient(transparent, black); */
-      // background: linear-gradient(to right, transparent, black); 
+      /* background: linear-gradient(to right, transparent, black); */
       /*
          to top, to left, to right 
          Se le pueda dar varios colores 
         */
       /*background: radial-gradient(transparent, black);  */
-      background: conic-gradient(transparent, black);   
-      boder-radius: 7px;
+      background: conic-gradient(transparent, black);         
+      border-radius: 7px;
       margin-top: 20px;
       border-top: 3px solid #900;
       
