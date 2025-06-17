@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels</title>
+    <link rel="stylesheet" href="/CLASES HTML/CSS/labels.css">
+</head>
+<body>
+
+    <form action="">
+        <h2>Formulario de Contacto  </h2>
+            <div class="form-input">
+            <label for="Nombre">Nombre Copleto</label>                    
+            <input type="text" placeholder="Ingrese Nombre Completo" id="Nombre">
+        </div>    
+        
+        <div class="form-input">
+            <label for="email">Mail</label>                    
+            <input type="email" placeholder="Ingrese su mail" id="email">
+        </div>
+
+        <div class="form-input">
+            <label for="mensaje">Mensaje</label>                    
+            <textarea readonly  
+                      placeholder="Deja tu mansaje" 
+                      maxlength="140"
+                      rows="10" 
+                      cols="30"
+                      id="mensaje">
+            </textarea>
+        </div>
+
+       <!-- Ejemplo de un label dentro de un input-->        
+        <div class="form-input">
+            <label>Acepto Terminos y Condiciones
+                  <input type="checkbox" class="checkbox">
+            </label> 
+        </div>
+        
+    </form>
+</body>
+</html>
