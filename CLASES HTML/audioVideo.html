@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio - Video </title>
+    <link rel="stylesheet" href="/CLASES HTML/CSS/audioVideo.css">
+</head>
+<body>
+    <!-- autoplay  indicando al navegador que intente reproducir el video automáticamente 
+          tan pronto como la página se cargue y el video esté listo.muted hace que el video 
+          comience a reproducirse sin sonido (silenciado)
+    --> 
+    
+    <!-- muted hace que el video comience a reproducirse sin sonido (silenciado)--> 
+    <!-- loop se reproduce en forma secuencial -->
+    <!-- track es para poner subtitulos --> 
+    <video controls autoplay muted loop src="/VIDEO/video.mp4">
+        <track scr="caption.vtt" default kind="captions" srclang="es" label="español">
+        El navegador no soporta al video
+    </video>
+<!--
+    <audio controls autoplay muted src="/VIDEO/video.mp4">
+        El navegador no soporta al video
+    </audio>
+-->    
+</body>
+</html>
