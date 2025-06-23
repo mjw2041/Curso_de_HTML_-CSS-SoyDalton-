@@ -1,0 +1,70 @@
+/* SELECTOR POR ATTIBUTO */
+/* Se selecciona solo la imnagen  starWar-2.jpg */
+img[scr="starWar-2.jpg"]{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Se selecciona solo la inagen  que arranque terminan en jpg*/
+/*
+img[scr$="jpg"]{
+    width: 100px;
+    height: 100px;
+}    
+*/    
+
+
+/*Se selecciona solo la inagen  que arranque con  ...*/
+/*
+img[scr^="star"]{
+    width: 100px;
+    height: 100px;    
+} 
+*/    
+
+/* Selecionar un componente que esta dentro de otro */
+
+ul li {
+    color: grey
+}
+
+
+/* SELECTOR POR HIJO DIRECTO */
+/* Selecionar un componente que es hijo directo  de otro */
+
+li > strong {
+    color: red
+}
+
+/* SELECTOR ADYACENTE */
+/**
+    Un selector adyacente en CSS (+) selecciona un elemento que está inmediatamente 
+    después de otro elemento específico, siempre y cuando ambos 
+    compartan el mismo padre en el HTML    
+*/
+
+h1 + p{
+    color:blue
+}
+
+/**
+  Un selector de hermanos generales en CSS (~) selecciona un elemento que es 
+  hermano del primero y aparece después de él en el código, sin importar 
+  si están inmediatamente adyacentes o si hay otros elementos entre ellos.
+  Piensa en él como "cualquier hermano que venga después
+*/
+/*
+h1 ~ p{
+    color:green
+}
+*/
+
+/*
+   h1, p significa: "Selecciona todos los elementos <h1> Y todos los elementos <p>.
+*/
+/*
+h1, p {
+   color: yellow
+}
+*/
