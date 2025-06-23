@@ -1,0 +1,67 @@
+/*
+pseudoclase en CSS te permite seleccionar un elemento basándose en un estado o una característica específica de ese elemento, en lugar de su estructura en el HTML.
+Pseudoclases CSS
+:hover: Aplica estilos cuando el usuario pasa el cursor sobre un elemento.
+:focus: Aplica estilos cuando un elemento (como un campo de texto o un botón) recibe el foco (por clic o tabulación).
+:active: Aplica estilos mientras un elemento está siendo activado por el usuario (por ejemplo, cuando se presiona un botón).
+:link: Aplica estilos a los enlaces que aún no han sido visitados.
+:visited: Aplica estilos a los enlaces que el usuario ya ha visitado.
+:first-child: Selecciona el primer elemento de un grupo de hermanos.
+:last-child: Selecciona el último elemento de un grupo de hermanos.
+:nth-child(n): Selecciona elementos basándose en su posición numérica dentro de un grupo de hermanos (puedes usar números, odd, even, o fórmulas).
+:first-of-type: Selecciona el primer elemento de un tipo específico (ej. el primer párrafo) entre sus hermanos.
+:last-of-type: Selecciona el último elemento de un tipo específico (ej. la última imagen) entre sus hermanos.
+:only-child: Selecciona un elemento que es el único hijo de su padre.
+:empty: Selecciona elementos que no tienen ningún contenido (ni texto ni otros elementos hijos).
+:checked: Aplica estilos a elementos de formulario marcados (como checkboxes o radio buttons seleccionados).
+:enabled: Aplica estilos a elementos de formulario que están habilitados para la interacción.
+:disabled: Aplica estilos a elementos de formulario que están deshabilitados y no se pueden interactuar con ellos.
+:valid: Aplica estilos a elementos de formulario cuyo valor es válido según sus reglas de validación.
+:invalid: Aplica estilos a elementos de formulario cuyo valor es inválido.
+:required: Aplica estilos a elementos de formulario que tienen el atributo required (son obligatorios).
+:optional: Aplica estilos a elementos de formulario que no son obligatorios.
+:not(selector): Selecciona todos los elementos excepto los que coinciden con el selector especificado entre paréntesis.
+:root: Selecciona el elemento raíz del documento (generalmente <html>), útil para variables CSS globales.
+:target: Selecciona el elemento que es el destino de un fragmento de URL (cuando se usa un ancla #id en la URL).
+*/
+
+h1{
+    color:#48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+h1:hover{
+    color:black;
+    background-color: #ccc;
+}
+
+h1:active{
+    color:red;
+    background-color: black;
+}
+
+li:first-child{
+    color:green
+}
+
+li:nth-child(2){
+    color:gold;
+}
+
+/* Se saltea los elementos seleccionador */
+li:nth-child(2n){
+    color:gold;
+}
+
+li:last-child{ 
+    color:yellow
+}
+
+li:nth-of-type(7){
+    color:white
+}
+
+.lista li:not(.excluir) {
+    color:grey;
+}

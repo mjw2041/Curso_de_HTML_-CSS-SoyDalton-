@@ -1,0 +1,113 @@
+ /*
+ la herencia en CSS significa que algunas propiedades de estilo 
+ aplicadas a un elemento padre son automáticamente heredadas por sus elementos hijos, 
+ a menos que se especifique lo contrario.
+
+ Propiedades CSS que NO se heredan:
+- Dimensiones y modelo de caja:
+  - width
+  - height
+  - min-width
+  - max-width
+  - min-height
+  - max-height
+  - margin
+  - padding
+  - border
+  - outline
+  - box-sizing
+
+- Posicionamiento y flujo:
+  - position
+  - top
+  - right
+  - bottom
+  - left
+  - float
+  - clear
+  - display (cómo se muestra un elemento: block, inline, flex, grid, etc.)
+  - z-index
+  - vertical-align (para elementos inline y table-cell)
+
+- Fondos:
+  - background-color
+  - background-image
+  - background-position
+  - background-repeat
+  - background-size
+  - background-attachment
+  - background (propiedad abreviada)
+
+- Listas (solo el marcador):
+  - list-style-type
+  - list-style-image
+  - list-style-position
+  - list-style (propiedad abreviada)
+    (Nota: las propiedades de texto dentro de un <li> sí se heredan)
+
+- Visuales y efectos:
+  - opacity
+  - box-shadow
+  - text-shadow
+  - transform
+  - filter
+  - cursor
+  - overflow
+  - clip
+  - visibility
+
+- Contenido generado (pseudo-elementos):
+  - content (usado con ::before y ::after)
+  - quotes
+
+- Transiciones y animaciones:
+  - transition
+  - animation
+ */
+
+body {
+    font-family: Arial, sans-serif; /* Define una fuente base para todo el texto */
+    font-size: 16px;              /* Establece un tamaño de fuente base */
+    line-height: 1.6;             /* Ajusta el espaciado entre líneas para mejor lectura */
+    color: #333;                  /* Define un color de texto oscuro pero no negro puro */
+    background-color: #f4f4f4;    /* Un color de fondo suave para toda la página */
+    margin: 0;                    /* Elimina el margen predeterminado del navegador */
+    padding: 0;                   /* Elimina el padding predeterminado del navegador */
+    box-sizing: border-box;       /* Asegura que padding y border se incluyan en el ancho/alto */
+    -webkit-font-smoothing: antialiased; /* Suaviza las fuentes en navegadores WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza las fuentes en macOS */
+}
+
+div {
+    color: greenyellow;
+    font-family:sans-serif;
+    width: 500px; /* Define el ancho del contenedor a 200px */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    /*
+    COMODINES ( 
+    color: inherit; 
+    a un elemento CSS, le estás diciendo que tome el mismo valor de la propiedad color que tiene su elemento padre directo.
+
+    color: initial; 
+    a una propiedad CSS, le estás diciendo al navegador que use el valor inicial (o por defecto) de esa propiedad, tal como lo define la especificación CSS
+    
+    color: unset;  
+    a una propiedad CSS, le estás diciendo al navegador que decida entre inherit e initial basándose en si la propiedad es una propiedad heredable o no heredable.
+
+    color: revert: 
+    a una propiedad CSS, le estás diciendo al navegador que revierta el valor de la propiedad al valor establecido por la hoja de estilos del usuario o del agente de usuario (navegador), anulando cualquier estilo previo del autor (tú) o de una hoja de estilos externa.
+    Para la propiedad color:
+    Situaciones, 
+    1> Si el navegador (agente de usuario) o el usuario (a través de configuraciones de accesibilidad, por ejemplo) tiene un estilo para el color de un elemento, revert lo usará.
+    2> Si no hay ningún estilo del agente de usuario o del usuario, entonces se comporta como unset.
+
+    */ 
+    
+}
+
+/* Opcional: Si quieres asegurarte de que el h1 y p se ajusten completamente al ancho */
+h1, p {
+    word-wrap: break-word; /* Rompe palabras largas para que no se desborden */
+}
+

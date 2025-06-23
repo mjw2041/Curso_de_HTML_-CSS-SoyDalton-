@@ -1,0 +1,35 @@
+/*
+
+Cascada en CSS
+La Cascada en CSS es el proceso fundamental que usa el navegador para determinar qué reglas de estilo se aplican a un elemento cuando hay múltiples reglas que podrían afectarlo. Piensa en ella como una serie de capas o "cascadas" de estilos que se superponen, donde las últimas en llegar (o las más fuertes) son las que prevalecen.
+
+
+Especificidad en CSS
+La especificidad en CSS es el algoritmo que usa el navegador para determinar qué reglas de estilo se aplican a un elemento HTML cuando hay múltiples reglas que entran en conflicto. En otras palabras, es la forma en que CSS decide qué estilo "gana" cuando varios están compitiendo por un mismo elemento.
+El navegador calcula la especificidad basándose en los tipos de selectores que usás en tu regla CSS, dándoles "puntos" en cuatro categorías (de mayor a menor importancia):
+
+1-.Estilos en línea (inline styles): Son los estilos que se aplican directamente en la etiqueta HTML usando el atributo style="...". Tienen la especificidad más alta. Se les da un valor de 1,0,0,0.
+
+2-. IDs: Selectores que apuntan a un elemento por su atributo id (ejemplo: #mi-id). Tienen una especificidad alta. Se les da un valor de 0,1,0,0 por cada ID.
+
+3-. Clases, atributos y pseudo-clases: Selectores que apuntan a elementos por sus atributos class (ejemplo: .mi-clase), otros atributos (ejemplo: [type="text"]) o pseudo-clases (ejemplo: :hover, :nth-child). Se les da un valor de 0,0,1,0 por cada uno.
+
+4-. Elementos y pseudo-elementos: Selectores que apuntan directamente a etiquetas HTML (ejemplo: p, div) o pseudo-elementos (ejemplo: ::before, ::after). Tienen la especificidad más baja. Se les da un valor de 0,0,0,1 por cada uno.
+
+Reglas de desempate:
+Si dos selectores tienen la misma especificidad, la última regla declarada en tu hoja de estilos (o la última que el navegador lee) es la que se aplica.
+La regla !important anula la especificidad de forma muy agresiva. Usala con extrema precaución, ya que puede generar problemas difíciles de depurar.
+*/
+
+#id_titulo{
+    color:green;
+}
+
+
+.class_titulo{
+    color:red;
+}
+
+h1{
+    color:blue;
+}
