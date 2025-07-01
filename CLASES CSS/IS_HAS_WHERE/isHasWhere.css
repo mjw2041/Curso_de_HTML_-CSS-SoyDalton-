@@ -1,0 +1,50 @@
+/*
+el selector **is()** en CSS te permite agrupar varios selectores complejos en uno solo para aplicar los mismos estilos.
+
+El selector **where()** en CSS es muy similar a **:is()**, ya que también te permite agrupar varios selectores en uno para aplicar los mismos estilos.
+
+La principal diferencia, y la razón de su existencia, es la especificidad.
+**:is()** toma la especificidad del selector más específico dentro de sus paréntesis.
+**where()** siempre tiene una especificidad de cero (0).
+
+**:has(selector)** selecciona un elemento si contiene o tiene dentro de sí un elemento que coincide con el selector especificado entre paréntesis.
+*/
+
+div {
+    padding: 20px;
+}
+
+section:has(.elemento4){
+    background-color: black;
+    color: white;
+}
+
+section :where(.elemento4){
+    background:green;
+}
+
+section :where(.elemento1, .elemento2, .elemento3){
+    background:blue;
+}
+
+
+section :is(.elemento1, .elemento2, .elemento3){
+    background:red;
+}
+
+/* Si quieron modificar un ul que se sigue  un div */
+ul:had(+div){
+    background-color: gray;
+    color: yellow;
+}
+
+/* Para cambiar la etiqueta de un input */
+label:has(input:valid), input:valid{
+    color: green
+}
+
+label:has(input:invalid), input:invalid{
+    color: red
+}
+
+

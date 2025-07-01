@@ -1,0 +1,128 @@
+/*
+
+los seudoelementos (o pseudo-elementos) son palabras clave que te permiten aplicar estilos a partes específicas de un elemento que la estructura HTML
+
+Claro, aquí tienes el contenido que me pediste, formateado como si fuera para un archivo de texto (`.txt`). Puedes copiarlo y pegarlo directamente en un nuevo archivo y guardarlo con la extensión `.txt` (por ejemplo, `seudoelementos.txt`).
+
+```
+### Seudoelementos CSS Más Comunes
+
+Los seudoelementos en CSS te permiten seleccionar y estilar partes específicas de un elemento que no están explícitamente definidas en el HTML. Son como "elementos virtuales" que CSS crea para un control más fino del diseño.
+
+---
+
+### ::before
+
+Este seudoelemento inserta contenido generado antes del contenido de un elemento seleccionado. Es ideal para añadir iconos, texto decorativo o cualquier elemento visual sin modificar el HTML. El contenido se define con la propiedad 'content'.
+
+Ejemplo: Añade una estrella antes de cada párrafo
+p::before {
+  content: "⭐ "; -- Inserta una estrella y un espacio 
+  color: gold;
+}
+
+---
+
+### ::after
+
+Similar a ::before, pero este seudoelemento inserta contenido generado después del contenido de un elemento seleccionado. También usa la propiedad 'content'.
+
+Ejemplo: Añade un punto final a los enlaces
+a::after {
+  content: " ."; -- Inserta un espacio y un punto 
+  color: gray;
+}
+
+---
+
+### ::first-letter
+
+Aplica estilos a la primera letra de la primera línea de un bloque de texto. Es perfecto para crear efectos de "capitalización" o "letras capitulares" en párrafos.
+
+Ejemplo: Aumenta el tamaño y cambia el color de la primera letra
+p::first-letter {
+  font-size: 2.5em; -- Hace la letra más grande 
+  color: darkblue;
+  font-weight: bold;
+}
+
+---
+
+### ::first-line
+
+Aplica estilos a la primera línea de un bloque de texto. La "línea" es dinámica y se adapta al ancho del contenedor.
+
+Ejemplo: Pone la primera línea de un párrafo en negrita y cursiva
+p::first-line {
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+}
+
+---
+
+### ::selection
+
+Permite estilizar el texto que el usuario selecciona o resalta con el cursor en la página. Es útil para personalizar la experiencia de usuario.
+
+Ejemplo: Cambia el fondo a amarillo y el texto a negro al seleccionar
+::selection {
+  background-color: yellow; -- Fondo del texto seleccionado 
+  color: black;             -- Color del texto seleccionado 
+}
+
+---
+
+### ::marker
+
+Estiliza el marcador de un elemento de lista (<li> o elementos con 'display: list-item'). Esto incluye los puntos, números o cualquier otro símbolo de lista.
+
+Ejemplo: Cambia el color y tamaño de los marcadores de lista
+li::marker {
+  color: purple;
+  font-size: 1.1em;
+}
+
+### placeholder: modificar el placeholder de un input
+*/
+
+div{
+    padding: 20px;
+}
+
+h1::first-letter{
+    color:red;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+
+div::first-line{
+    color:green;
+    font-weight: bold;
+}
+
+div::selection{
+    color:blue;
+    background-color: red;
+}
+
+input::placeholder{
+    background-color: turquoise;
+    color: blue;
+}
+
+li::marker{
+    color:red
+}
+
+li::before{
+    content: "Mensaje Antes - ";
+    color:red
+}
+
+li::after{
+    content: "- Mensaje Despues";
+    color:blue
+}
+
+

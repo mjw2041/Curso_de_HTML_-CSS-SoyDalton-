@@ -1,0 +1,34 @@
+/*
+La propiedad display en CSS es una de las propiedades más fundamentales y potentes para controlar el diseño y el flujo de los elementos en una página web. Define cómo se renderiza un elemento en el documento, es decir, cómo se comporta en relación con otros elementos y cómo ocupa el espacio
+Valores Comunes de display
+
+1-. display: block;
+Comportamiento:
+Cada elemento block comienza en una nueva línea.
+Ocupa todo el ancho disponible de su contenedor por defecto (se "estira" horizontalmente).
+Permite aplicar propiedades de width (ancho), height (alto), margin (márgenes) y padding (relleno) que afectarán su tamaño y espaciado.
+
+2-. display: inline;
+Comportamiento:
+Los elementos inline no comienzan en una nueva línea. Se colocan uno al lado del otro, dentro del flujo de texto.
+Solo ocupan el espacio necesario para su contenido.
+No se pueden aplicar width ni height. Los márgenes y rellenos horizontales funcionan, pero los verticales (top/bottom) son ignorados o tienen un comportamiento inconsistente y no afectan el flujo de la línea.
+
+
+3-. display: inline-block;
+
+Comportamiento:
+Combina características de inline y block.
+Se colocan uno al lado del otro (como inline).
+Permite aplicar width y height (como block).
+Los márgenes y rellenos funcionan en todas las direcciones (top, right, bottom, left).
+Cuándo usarlo: Para elementos que deseas que estén en la misma línea pero que también necesiten tener dimensiones específicas (ej. botones en una barra de navegación, tarjetas en una fila).
+
+4-. display: none;
+Comportamiento:
+El elemento es completamente eliminado del flujo del documento. Es como si nunca hubiera existido.
+No ocupa espacio en la página.
+Es ideal para ocultar y mostrar elementos dinámicamente con JavaScript, ya que no afectan el diseño de los demás elementos.
+Diferencia con visibility: hidden;: visibility: hidden; oculta el elemento, pero sí ocupa su espacio en el layout, dejando un "hueco" donde debería estar. display: none; lo elimina por completo
+
+*/

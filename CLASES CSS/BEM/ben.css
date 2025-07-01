@@ -1,0 +1,26 @@
+/*
+La metodología BEM (del inglés Block, Element, Modifier) es una convención de nomenclatura para clases de CSS que te ayuda a escribir código más modular, reutilizable y fácil de mantener. Su objetivo principal es hacer que el CSS sea más predecible y que tu equipo pueda entender rápidamente la estructura de los componentes de la interfaz de usuario.
+*/
+.lista {
+    border: 2px solid #000
+}
+
+.lista__item{ 
+    color: grey;    
+    margin: 10px;
+    list-style: square
+
+}
+
+.lista--vieja {
+    opacity: 0.50;
+    background-color: #ccc;
+}
+
+.item--danino{
+    color: red
+}
+
+.item--importante {
+    color: blue
+}

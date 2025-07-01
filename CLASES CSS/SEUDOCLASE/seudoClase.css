@@ -65,3 +65,47 @@ li:nth-of-type(7){
 .lista li:not(.excluir) {
     color:grey;
 }
+  /** Selecciono Elementos Vacios */
+div:empty{
+    background-color: #0f0;
+    padding: 30px;
+}
+
+/*
+   Para utilizar un checobx  Seleccionado o no
+*/
+
+input[type="checkbox"]{
+    margin-left: 50px;
+}
+
+input[type="checkbox"]:checked{
+    margin-left: 0px;
+}
+
+/* Selecionar enlace 
+   Tiene que tener el atributo href
+*/
+/* Visitado */
+a:link{
+    color:green
+}
+
+/* No Visitado */
+
+a:visited{
+    color: blue
+}
+
+/* Validar un input valido */
+
+input:invalid {
+    color: red;
+    background: black;
+}
+
+input:valid {
+    color: green;
+    background: transparent;
+}
+

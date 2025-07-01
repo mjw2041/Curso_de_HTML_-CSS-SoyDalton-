@@ -1,0 +1,198 @@
+ATAJOS VS
+¡Entendido\! Aquí tienes el archivo de atajos de VS Code, **solo con los atajos para Windows y Linux (que usan `Ctrl`)**.
+
+-----
+
+```
+VS CODE - ATAJOS DE TECLADO COMUNES (SOLO WINDOWS/LINUX)
+
+Aquí tienes una lista de los atajos de teclado más utilizados en Visual Studio Code.
+Dominarlos te ayudará a ser mucho más productivo.
+
+---
+
+## Edición Básica de Texto
+
+* **Ctrl + C**: Copiar selección
+* **Ctrl + X**: Cortar selección
+* **Ctrl + V**: Pegar contenido
+* **Ctrl + Z**: Deshacer última acción
+* **Ctrl + Y** (o **Ctrl + Shift + Z**): Rehacer última acción
+* **Ctrl + A**: Seleccionar todo el contenido del archivo
+* **Ctrl + S**: Guardar archivo
+* **Ctrl + Shift + S**: Guardar todos los archivos abiertos
+* **Alt + Z**: Alternar **ajuste de línea (Word Wrap)**
+* **Ctrl + Inicio**: Ir al inicio del archivo
+* **Ctrl + Fin**: Ir al final del archivo
+* **Inicio**: Ir al inicio de la línea
+* **Fin**: Ir al final de la línea
+
+---
+
+## Navegación y Apertura de Archivos
+
+* **Ctrl + P**: Abrir búsqueda rápida de archivos (Go to File)
+* **Ctrl + Tab**: Navegar entre archivos abiertos (pestañas)
+* **Ctrl + W**: Cerrar pestaña actual
+* **Ctrl + K Ctrl + W**: Cerrar todas las pestañas
+* **Ctrl + N**: Crear nuevo archivo
+* **Ctrl + O**: Abrir archivo...
+* **Ctrl + Shift + T**: Reabrir última pestaña cerrada
+* **Ctrl + G**: Ir a la línea...
+* **Ctrl + K P**: Copiar la ruta del archivo activo
+* **Ctrl + Click**: Ir a la definición (función, variable, etc.)
+
+---
+
+## Edición de Líneas y Bloques
+
+* **Ctrl + Shift + K**: Eliminar la línea actual
+* **Alt + Flecha Arriba**: Mover línea/selección arriba
+* **Alt + Flecha Abajo**: Mover línea/selección abajo
+* **Shift + Alt + Flecha Arriba**: Duplicar línea/selección hacia arriba
+* **Shift + Alt + Flecha Abajo**: Duplicar línea/selección hacia abajo
+* **Ctrl + Enter**: Insertar línea debajo (sin mover el cursor)
+* **Ctrl + Shift + Enter**: Insertar línea arriba (sin mover el cursor)
+* **Ctrl + /**: Comentar/descomentar línea o selección
+* **Shift + Alt + A**: Comentar bloque (CSS, HTML, etc.)
+* **Tab**: Indentar línea/selección
+* **Shift + Tab**: Desindentar línea/selección
+
+---
+
+## Búsqueda y Reemplazo
+
+* **Ctrl + F**: Buscar en el archivo actual
+* **Ctrl + H**: Reemplazar en el archivo actual
+* **Ctrl + Shift + F**: Buscar en todos los archivos del proyecto
+* **Ctrl + Shift + H**: Reemplazar en todos los archivos del proyecto
+* **F3**: Ir a la siguiente coincidencia de búsqueda
+* **Shift + F3**: Ir a la coincidencia de búsqueda anterior
+
+---
+
+## Selección Múltiple y Cursores Múltiples
+
+* **Alt + Click**: Añadir un cursor en la posición del clic
+* **Ctrl + D**: Seleccionar la siguiente ocurrencia de la palabra seleccionada (añade un cursor)
+* **Ctrl + L**: Seleccionar la línea actual
+* **Shift + Alt + I**: Insertar un cursor al final de cada línea seleccionada
+* **Ctrl + F2**: Seleccionar todas las ocurrencias de la palabra actual (y crear cursores para cada una)
+
+---
+
+## Terminal Integrado
+
+* **Ctrl + `** (acento grave): Abrir/cerrar terminal integrado
+* **Ctrl + Shift + `**: Crear nuevo terminal
+
+---
+
+## Paneles y Vistas
+
+* **Ctrl + B**: Mostrar/ocultar barra lateral (Explorer, Search, Extensions, etc.)
+* **Ctrl + J**: Mostrar/ocultar paneles inferiores (Terminal, Output, Problems, Debug Console)
+* **Ctrl + Shift + E**: Mostrar explorador de archivos
+* **Ctrl + Shift + X**: Mostrar vista de extensiones
+* **Ctrl + Shift + G**: Mostrar control de código fuente (Git)
+* **Ctrl + Shift + D**: Mostrar vista de depuración
+* **Ctrl + Shift + U**: Mostrar panel de salida (Output)
+
+---
+
+## Paleta de Comandos
+
+* **Ctrl + Shift + P**: Abrir la **Paleta de Comandos** (escribe cualquier comando para ejecutarlo, ¡muy útil!)
+
+---
+
+## Depuración (Debugging)
+
+* **F5**: Iniciar depuración
+* **Shift + F5**: Detener depuración
+* **F9**: Alternar punto de interrupción (breakpoint)
+* **F10**: Paso a paso por encima (step over)
+* **F11**: Paso a paso por dentro (step into)
+* **Shift + F11**: Salir (step out)
+
+
+
+VS CODE - MÁS ATAJOS DE TECLADO COMUNES (SOLO WINDOWS/LINUX)
+
+
+## Atajos de Líneas y Columnas
+
+* **Ctrl + Shift + \**: Ir al paréntesis/corchete/llave correspondiente
+* **Alt + Shift + I**: Insertar cursor al final de cada línea seleccionada
+* **Ctrl + Alt + Flecha Arriba**: Insertar cursor arriba
+* **Ctrl + Alt + Flecha Abajo**: Insertar cursor abajo
+* **Shift + Alt + Clic del ratón arrastrando**: Selección de columna (bloque)
+
+---
+
+## Refactorización y Edición Avanzada
+
+* **F2**: Renombrar símbolo (variable, función, etc.)
+* **Shift + F12**: Mostrar referencias (dónde se usa el símbolo)
+* **Ctrl + .**: Mostrar Acciones rápidas y refactorizaciones (cuando hay bombillas de sugerencia)
+* **Ctrl + K Ctrl + X**: Eliminar espacios en blanco finales
+
+---
+
+## Formato y Organizar Código
+
+* **Shift + Alt + F**: Formatear documento (requiere formateador para el lenguaje)
+* **Ctrl + K F**: Formatear selección
+* **Alt + Shift + O**: Organizar Imports (para lenguajes que lo soporten, como TypeScript/JavaScript, Python)
+
+---
+
+## Git y Control de Versiones
+
+* **Ctrl + Shift + P**, luego escribir `Git: Clone`: Clonar un repositorio
+* **Ctrl + Shift + P**, luego escribir `Git: Commit All`: Realizar un commit de todos los cambios
+* **Ctrl + Shift + P**, luego escribir `Git: Pull`: Bajar cambios del repositorio remoto
+* **Ctrl + Shift + P**, luego escribir `Git: Push`: Subir cambios al repositorio remoto
+* **Ctrl + K S**: Abrir la vista de Control de Código Fuente (Git)
+
+---
+
+## Plegar/Desplegar Código
+
+* **Ctrl + Shift + [**: Plegar región (contraer)
+* **Ctrl + Shift + ]**: Desplegar región (expandir)
+* **Ctrl + K Ctrl + 0**: Plegar todas las regiones
+* **Ctrl + K Ctrl + J**: Desplegar todas las regiones
+* **Ctrl + K Ctrl + C**: Plegar todos los comentarios (si el lenguaje lo soporta)
+
+---
+
+## Ventanas y Divisiones de Editor
+
+* **Ctrl + \**: Dividir editor (abre el mismo archivo en una vista dividida)
+* **Ctrl + 1**: Ir al grupo de editor 1
+* **Ctrl + 2**: Ir al grupo de editor 2
+* **Ctrl + 3**: Ir al grupo de editor 3
+* **Ctrl + K Flecha Izquierda**: Mover el editor activo al grupo de la izquierda
+* **Ctrl + K Flecha Derecha**: Mover el editor activo al grupo de la derecha
+
+---
+
+## Barra de Estado y Errores
+
+* **F8**: Ir al siguiente error o advertencia
+* **Shift + F8**: Ir al error o advertencia anterior
+* **Ctrl + K M**: Cambiar el modo de lenguaje del archivo actual
+
+---
+
+## Explorador de Archivos
+
+* **F2**: Renombrar archivo/carpeta en el explorador
+* **Supr**: Eliminar archivo/carpeta en el explorador
+* **Ctrl + Click**: Abrir múltiples archivos en el editor desde el explorador
+
+---
+
+¡Espero que esta segunda lista te sea igual de útil! VS Code es muy personalizable, y si hay alguna tarea que haces mucho, es probable que tenga un atajo o que puedas crear uno personalizado.
+```
