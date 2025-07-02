@@ -1,0 +1,3 @@
+/*
+Posición Absoluta (position: absolute;): Un elemento con posición absoluta se coloca respecto a su ancestro posicionado más cercano (no necesariamente el padre directo, sino el que tenga position distinto de static). Pierde su espacio en el flujo normal del documento, como si "flotara". Su ubicación se define con top, bottom, left, right.
+*/

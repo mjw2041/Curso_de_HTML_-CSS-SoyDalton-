@@ -1,0 +1,32 @@
+/*
+
+
+Posición Relativa (position: relative;): Un elemento con posición relativa se coloca respecto a su posición original en el flujo normal del documento. Sigue ocupando su espacio original. Luego, puedes desplazarlo con top, bottom, left, right, y ese desplazamiento se hace desde donde originalmente estaría.
+*/
+
+body{
+    margin: 0px;
+}
+
+.box{
+    background-color:orange;
+    width: 100px;
+    height: 100px;    
+    position: relative;
+    color:white;
+}   
+
+.box--blue{
+   background-color:blue;   
+   top: 70px;   
+   left:20px;
+   right: 80px;
+   z-index: 20;
+}
+
+.box--red{    
+    top: 150px;    
+    left: 40px;            
+    background-color: red;    
+    z-index: 30    
+}
