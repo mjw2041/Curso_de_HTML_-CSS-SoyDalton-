@@ -1,3 +1,37 @@
 /*
 Posición Absoluta (position: absolute;): Un elemento con posición absoluta se coloca respecto a su ancestro posicionado más cercano (no necesariamente el padre directo, sino el que tenga position distinto de static). Pierde su espacio en el flujo normal del documento, como si "flotara". Su ubicación se define con top, bottom, left, right.
+/* La posion es     relativa a objeto padre siempre que tenga position:relative, si no es usara la posicion del html
 */
+
+body{
+    margin:0px;
+    background-color: #ccc;
+}
+
+.container{    
+    border: 2px solid #000;
+    margin: 20px 20px;
+    font-family: sans-serif;
+    text-align: center;
+    background: #fff;
+    position:relative;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #db7;
+    color:white
+}
+
+.box--blue{
+    background-color: #48e;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    /* Si pongo top 0 bottom 0 right 0 letf 0 y margin auto se centra automaticamente */
+}
+
+.box--red{
+    background-color:#f53;
+}
