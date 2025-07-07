@@ -1,0 +1,58 @@
+/**
+  fixex simpre se posiciona con respecto a la ventana del navegador
+  stcky se posiciona con respecto al scroll del navegador
+  y se queda pegado a la parte superior de la ventana del navegador     
+      cuando se hace scroll hacia abajo.  
+*/
+
+body{
+      margin: 0px;
+      font-family: sans-serif;
+}
+
+.box{
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      position: fixed;
+      right: 0px;
+      border: 2px solid #000;
+      border-right: 0;
+      box-shadow: 0px 0px 40px rgba(0,0,0,0.5); 
+}
+
+.contenedor{
+      padding: 200px;
+      background-color: blue
+
+}
+
+h2{
+      font-size: 18px;
+      margin: 0px;      
+}
+
+p{
+      font-size: 14px;
+      margin: 0px;
+}
+
+.box-fixed{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      position: sticky;
+      right: 0px;
+      border: 2px solid #000;
+      border-right: 0;
+      box-shadow: 0px 0px 40px rgba(0,0,0,0.5); 
+      top: 30px; /* Se queda pegado a 30px de la parte superior del navegador */  
+}
+
+.second{
+      top:120px
+}
+
+.last{
+      top:190px
+}

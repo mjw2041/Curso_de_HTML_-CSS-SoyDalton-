@@ -14,4 +14,30 @@ body{
 
 .modal__content{
     background-color: #fff;
+    padding: 10px 20px;
+    width:80%;
+    margin: auto;
+    margin-top: 50px;  
+    position: relative;  
 }
+
+.modal__title{
+    
+    margin-top: 10px;
+}
+
+.modal__close-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;    
+    color: #fff;
+    background-color: black;
+    padding: 4px 12px;
+}
+
+dialog{
+    position: absolute;
+    background-color: #0009;
+    height: 100vh;
+    box-sizing: border-box;
+}    
