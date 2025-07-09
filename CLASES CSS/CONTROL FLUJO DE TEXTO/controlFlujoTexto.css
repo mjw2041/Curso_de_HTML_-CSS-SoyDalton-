@@ -1,0 +1,71 @@
+/*
+  
+white-space`
+
+normal        Secuencias de espacios colapsadas, saltos de línea como espacios. El texto se ajusta.
+nowrap        Secuencias de espacios colapsadas. El texto NO se ajusta (todo en una línea).
+pre           Mantiene todos los espacios y saltos de línea. El texto NO se ajusta.
+pre-wrap      Mantiene todos los espacios y saltos de línea. El texto SÍ se ajusta.
+pre-line      Secuencias de espacios colapsadas. Mantiene los saltos de línea. El texto SÍ se ajusta.
+break-spaces  Similar a pre-wrap, pero permite que los espacios individuales se rompan al final de la línea.
+
+text-overflow
+
+clip          El texto es cortado donde el contenido desborda el contenedor (por defecto).
+ellipsis      Representa el texto desbordado con puntos suspensivos (...).
+string        (Obsoleto, no usar) Representa el texto desbordado con una cadena personalizada.
+fade          (Experimental, no estándar) Desvanece el texto desbordado.
+
+
+overflow
+
+visible       El contenido desbordante NO es cortado y puede verse fuera del contenedor (por defecto).
+hidden        El contenido desbordante ES cortado y oculto. No se muestran barras de desplazamiento.
+scroll        El contenido desbordante ES cortado, y se muestran barras de desplazamiento SIEMPRE (tanto si se necesitan como si no).
+auto          El contenido desbordante ES cortado, y se muestran barras de desplazamiento SÓLO si es necesario.
+
+word-break
+
+normal        Respeta las reglas de ruptura de línea predeterminadas del idioma (por defecto).
+break-all     Permite que las palabras se rompan en cualquier carácter para evitar desbordamientos.
+keep-all      No permite la ruptura de palabras, solo de los espacios en blanco. Puede causar desbordamiento.
+
+
+word-wrap
+
+normal        Las líneas solo se rompen en los puntos de ruptura habituales (espacios o guiones).
+break-word    Permite que las palabras largas se rompan en cualquier punto si no hay otros puntos de ruptura disponibles, para evitar que el texto desborde su contenedor.
+
+
+text-wrap
+wrap          El texto se ajustará a la siguiente línea si no cabe en la actual (comportamiento por defecto).
+nowrap        El texto no se ajustará; permanecerá en una sola línea y puede desbordar el contenedor.
+balance       Intenta crear líneas de texto con longitudes visualmente similares para una mejor legibilidad.
+pretty        Intenta evitar la viuda o huérfana de palabras, y favorece puntos de ruptura que resulten en un diseño más estético.
+stable        El texto se ajusta de forma consistente, sin reajustes de línea si el contenido o el tamaño del contenedor cambian ligeramente.
+
+
+*/
+
+body{
+    font-family: sans-serif;
+    background-color: #ccc;    
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;   
+    border: 1px solid #0006; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+
+}
+
+h1{
+ text-wrap: balance;   
+}

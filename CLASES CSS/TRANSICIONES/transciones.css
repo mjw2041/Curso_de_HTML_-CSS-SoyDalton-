@@ -1,3 +1,19 @@
+/*
+ Tipo de  transition-timing-function
+   ease (por defecto): Es la más común y el valor predeterminado. La transición comienza lentamente, se acelera en el medio y termina lentamente
+
+   linear: La transición ocurre a una velocidad constante de principio a fin
+
+   ease-out: La transición comienza rápidamente y luego se ralentiza hacia el final. 
+
+   ease-in-out: La transición comienza lentamente, acelera y luego se ralentiza nuevamente hacia el final.
+
+  step-start: La transición salta inmediatamente al estado final del primer paso y permanece allí para el resto de la duración
+  
+  step-end: La transición permanece en el estado inicial para la duración del primer paso y luego salta al estado final
+  
+*/
+
 body{
       margin: 0px;
       font-family: sans-serif;
@@ -10,11 +26,39 @@ body{
       background-color: red;
       margin: auto;
       margin-top: 50px;
-      font-size: 20px;  
+      font-size: 60px;  
       text-align: center;
+      font-weight: bold;
+      /* transition-property: color;*/  /* Propiedad*/
+      transition-property: all;  /* Todas las propiedades*/
+      transition-duration: 1s; /* Duracion */
+      /*transition-delay: 2s;*/ /* Cuanto tarda en empezar*/
+      /* transition: [propiedad] [duración] [función-de-tiempo] [retraso]; */
+         /* En una sola linea */ 
+      color: red;
+}
+
+.box1{
+      width: 200px;
+      height: 200px;
+      background-color: blue;      
+      margin-top: 50px;
+      font-size: 60px;  
+      text-align: center;
+      font-weight: bold;
+      transition-property: left;  /* Propiedad*/      
+      transition-duration: 1s; /* Duracion */
+      transition-timing-function: step-start; /* Velocidad de la animacion */
+      position:relative;
+      left:0px;
+      color: red;
 }
 
 .box:hover{
       background-color: #a22;
       color: #fff
+}     
+
+.box1:hover{
+      left:400px;      
 }     

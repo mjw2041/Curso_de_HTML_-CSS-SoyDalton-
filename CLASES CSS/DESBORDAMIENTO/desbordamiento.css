@@ -1,0 +1,37 @@
+/**
+En CSS, el desbordamiento (o overflow) ocurre cuando el contenido dentro de un elemento es demasiado grande para ajustarse a sus dimensiones especificadas (ancho y alto). Es como intentar meter un objeto grande en una caja pequeña.
+
+La propiedad overflow te permite controlar qué pasa con ese contenido que "sobresale" de la caja. Puedes decidir si se recorta, si se muestran barras de desplazamiento para verlo, o si simplemente se oculta.
+
+Usa visible cuando quieras que el contenido sobresalga y no te preocupen los elementos superpuestos o el diseño.
+
+Usa hidden para recortar contenido que no debe ser visible bajo ninguna circunstancia, por ejemplo, para crear efectos de mascarilla o para evitar que el contenido sobresalga de un contenedor.
+
+Usa scroll cuando siempre quieras proporcionar barras de desplazamiento, incluso si no son estrictamente necesarias, lo que puede ser útil para mantener una interfaz consistente.
+
+Usa auto cuando quieras que las barras de desplazamiento aparezcan solo si es necesario, proporcionando una mejor experiencia de usuario al evitar barras de desplazamiento innecesarias.
+
+clip se utiliza en casos más específicos donde se necesita el comportamiento de recorte sin establecer un contexto de formato de bloque.
+*/
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #ccc;    
+}
+
+.box{
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    color: red;
+    position: relative;
+    left: 0;
+    border: 2px SOLID #0009;
+    margin: auto;
+    margin-top: 50px;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* ocultar el scroll x */
+    
+}

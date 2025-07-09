@@ -1,0 +1,13 @@
+body{
+    margin:0 px;
+    background-color: #ccc;    
+}
+
+.box{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: 200px;
+
+}

@@ -1,0 +1,35 @@
+/*
+object-fit
+
+fill          El contenido redimensionado llena el contenedor. Si la relación de aspecto no coincide, el objeto será estirado o aplastado para encajar (por defecto).
+contain       El contenido redimensionado se escala para encajar dentro del contenedor manteniendo su relación de aspecto. Puede haber espacio vacío (letterboxing).
+cover         El contenido redimensionado llena el contenedor manteniendo su relación de aspecto. El objeto será recortado si su relación de aspecto no coincide.
+none          El contenido no es redimensionado. Se mantiene en su tamaño original y puede desbordar o ser recortado.
+scale-down    El contenido se escala hacia abajo como si fuera `none` o `contain`, eligiendo la que resulte en un objeto más pequeño.
+```
+
+
+
+object-fit
+fill          El contenido (ej., imagen/video) estira o comprime para llenar completamente el contenedor, ignorando su relación de aspecto original.
+contain       El contenido se escala para caber dentro del contenedor, manteniendo su relación de aspecto. Puede dejar espacio vacío (bandas).
+cover         El contenido se escala para llenar completamente el contenedor, manteniendo su relación de aspecto. Las partes que no encajan son recortadas.
+none          El contenido no se escala. Mantiene su tamaño original, pudiendo desbordar o ser recortado por el contenedor.
+scale-down    El contenido se comporta como 'none' o 'contain', eligiendo la opción que haga que el objeto sea más pequeño y quepa en el contenedor.
+```
+*/
+body{
+    font-family: sans-serif;
+    margin:0px;
+    background-color: #ccc;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    border: 10px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+    object-fit: cover;
+    object-position: center;
+}
