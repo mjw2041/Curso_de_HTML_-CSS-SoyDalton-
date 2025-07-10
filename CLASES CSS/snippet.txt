@@ -1,0 +1,24 @@
+{
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"estructuraHeader": {
+		"prefix": "fullheader",
+		"body": [
+			"header.header>nav.header-nav>ul.header-ul>li.list-Item*4>a.list{Enlaces $}"
+		],
+		"description": "Estuctura Header Completa"
+	},
+	"h1": {
+		"prefix": "h1",
+		"body": [
+			"<h1>${1:Texto del encabezado}</h1>"
+		],
+		"description": "Crea una etiqueta <h1>"
+	}
+}
