@@ -10,7 +10,7 @@
 	"estructuraHeader": {
 		"prefix": "fullheader",
 		"body": [
-			"header.header>nav.header-nav>ul.header-ul>li.list-Item*4>a.list{Enlaces $}"
+			"header.header>nav.header-nav>ul.header-ul>(li.list-Item*>a.list{Enlaces $})*${1:CANTIDAD}"
 		],
 		"description": "Estuctura Header Completa"
 	},

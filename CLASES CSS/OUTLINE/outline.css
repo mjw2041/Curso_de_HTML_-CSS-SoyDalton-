@@ -9,5 +9,36 @@ body{
     height: 200px;
     margin-left: 500px;
     margin-top: 200px;
+    border: 5px solid #000;
+    outline-width: 10px;
+    outline-color: #00f;
+    outline-style: double;
+    outline-offset: 10px; /* determina cuanto se separa */  
+}
 
+.box:hover{
+    outline: 10px solid black 
+}
+
+input{
+    margin: 50px;
+    border: none;
+    border-top: 3px solid black;
+    outline: 3px solid red;
+    outline-offset: 10px;
+    padding: 6px;
+    transition: outline .2s;
+
+
+}
+
+input:focus{
+    border-color: blue;
+    color: blue;
+    outline: none;
+    
+}
+
+input:focus-visible{
+    outline: none;
 }

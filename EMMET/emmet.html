@@ -1,0 +1,222 @@
+<!--
+## Emmet: Comandos Populares
+
+Aquí tienes un listado de los comandos de Emmet más populares y útiles, perfectos para agilizar tu flujo de trabajo en HTML y CSS. ¡Guárdalo como un archivo `.txt` para tenerlo siempre a mano\!
+HTML:
+1.  ! o html: Estructura básica de un documento HTML5.
+    Ejemplo: ! [Tab]
+    Produce:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+    </body>
+    </html>
+
+2.  Etiquetas (tagname): Crea una etiqueta HTML.
+    Ejemplo: div [Tab]
+    Produce: <div></div>
+
+3.  Id (#id): Crea una etiqueta con un ID específico.
+    Ejemplo: div#header [Tab]
+    Produce: <div id="header"></div>
+
+4.  Clase (.class): Crea una etiqueta con una clase específica.
+    Ejemplo: p.text-intro [Tab]
+    Produce: <p class="text-intro"></p>
+
+5.  Múltiples clases (.class1.class2): Crea una etiqueta con múltiples clases.
+    Ejemplo: div.container.main [Tab]
+    Produce: <div class="container main"></div>
+
+6.  Anidamiento (>): Anida elementos.
+    Ejemplo: ul>li [Tab]
+    Produce:
+    <ul>
+        <li></li>
+    </ul>
+
+7.  Hermanos (+): Crea elementos hermanos.
+    Ejemplo: div+p [Tab]
+    Produce:
+    <div></div>
+    <p></p>
+
+8.  Multiplicación (*): Multiplica elementos.
+    Ejemplo: li*5 [Tab]
+    Produce:
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+9.  Agrupación (()): Agrupa elementos para aplicar anidamiento o multiplicación.
+    Ejemplo: div>(header>ul>li*2)+footer>p [Tab]
+    Produce:
+    <div>
+        <header>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+10. Atributos ([attr="value"]): Añade atributos a los elementos.
+    Ejemplo: a[href="#"][target="_blank"] [Tab]
+    Produce: <a href="#" target="_blank"></a>
+
+11. Contenido de texto ({text}): Añade texto dentro de una etiqueta.
+    Ejemplo: h1{Hola Mundo} [Tab]
+    Produce: <h1>Hola Mundo</h1>
+
+12. Numeración ($): Numera elementos multiplicados.
+    Ejemplo: ul>li.item$*3 [Tab]
+    Produce:
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+    </ul>
+
+CSS:
+
+1.  Propiedades cortas: Genera propiedades CSS comunes.
+    Ejemplo:
+    -   m [Tab] -> margin: ;
+    -   p [Tab] -> padding: ;
+    -   d [Tab] -> display: ;
+    -   pos [Tab] -> position: ;
+    -   fl [Tab] -> float: ;
+    -   bg [Tab] -> background: ;
+    -   c [Tab] -> color: ;
+    -   fz [Tab] -> font-size: ;
+    -   w [Tab] -> width: ;
+    -   h [Tab] -> height: ;
+
+2.  Valores de propiedades: Completa valores comunes.
+    Ejemplo:
+    -   d:n [Tab] -> display: none;
+    -   d:b [Tab] -> display: block;
+    -   d:f [Tab] -> display: flex;
+    -   pos:a [Tab] -> position: absolute;
+    -   pos:r [Tab] -> position: relative;
+
+3.  Unidades: Añade unidades automáticamente.
+    Ejemplo:
+    -   w100p [Tab] -> width: 100%;
+    -   h50v [Tab] -> height: 50vh;
+    -   m10 [Tab] -> margin: 10px;
+
+4.  !important: Añade !important a una propiedad.
+    Ejemplo: p! [Tab]
+    Produce: padding: !important;
+
+Otros comandos útiles:
+
+1.  Lorem ipsum (lorem): Genera texto de relleno.
+    Ejemplo: p>lorem [Tab]
+    Produce: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eveniet?</p>
+    (Puedes especificar la cantidad de palabras, e.g., lorem10)
+```
+
+Espero que este archivo `.txt` te sea de gran utilidad. ¡Emmet es una herramienta fantástica para aumentar tu velocidad de codificación\!
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="emmet.css">
+    <title>EMMET</title>
+</head>
+<body>
+    <!-- li*4>a-->
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <!--ul>li*4>a -->
+      <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+      </ul>
+
+      <!--ul>(li*4>a) -->
+      <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+      </ul>
+      
+      <!-- ul>li*4>a.link-->
+      <ul>
+            <li><a href="" class="link"></a></li>
+            <li><a href="" class="link"></a></li>
+            <li><a href="" class="link"></a></li>
+            <li><a href="" class="link"></a></li>
+      </ul>
+      
+      <!-- <ul>li*4>a#link -->
+      <ul>
+            <li><a href="" id="link"></a></li>
+            <li><a href="" id="link"></a></li>
+            <li><a href="" id="link"></a></li>
+            <li><a href="" id="link"></a></li>
+      </ul> 
+      
+      <!-- ul>li.test-item*4>a.link -->
+      <ul>
+            <li class="test-item"><a href="" class="link"></a></li>
+            <li class="test-item"><a href="" class="link"></a></li>
+            <li class="test-item"><a href="" class="link"></a></li>
+            <li class="test-item"><a href="" class="link"></a></li>
+      </ul>
+      
+      <!-- ul.header-ul>li.list-item*4>a.link -->
+      <ul class="header-ul">
+            <li class="list-item"><a href="" class="link"></a></li>
+            <li class="list-item"><a href="" class="link"></a></li>
+            <li class="list-item"><a href="" class="link"></a></li>
+            <li class="list-item"><a href="" class="link"></a></li>
+      </ul>
+
+      <!-- header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link[Link $ ] -->
+
+      <header class="header">
+            <nav class="header-nav">
+                  <ul class="header-ul">
+                        <li class="list-item"><a href="" class="link" Link="" 1=""></a></li>
+                        <li class="list-item"><a href="" class="link" Link="" 2=""></a></li>
+                        <li class="list-item"><a href="" class="link" Link="" 3=""></a></li>
+                        <li class="list-item"><a href="" class="link" Link="" 4=""></a></li>
+                  </ul>
+            </nav>
+      </header>
+
+      <header class="header">
+            <nav class="header-nav">
+                  <ul class="header-ul">
+                        <li class="list-Item"><a href="" class="list">Enlaces 1</a></li>
+                        <li class="list-Item"><a href="" class="list">Enlaces 1</a></li>
+                        <li class="list-Item"><a href="" class="list">Enlaces 1</a></li>
+                        <li class="list-Item"><a href="" class="list">Enlaces 1</a></li>
+                  </ul>
+            </nav>
+      </header>
+</body>
+</html>

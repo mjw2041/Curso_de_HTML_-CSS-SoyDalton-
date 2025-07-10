@@ -1,0 +1,21 @@
+/*
+  b: bottom
+  m: margin
+  m10: margin 10px
+  m10p: margin 10%
+  m10e: margin 10em
+  m10-10: margin 10px 10px
+  m10p10p: margin 10% 10%
+  m10e10e: margin 10em 10em
+  m10x10x: margin 10ex 10ex
+  w: width
+  c: color
+  c#<color>: color 
+  bgc: background Color
+  bt: border top
+
+*/
+
+header:{    
+    margin: 10px;
+}
