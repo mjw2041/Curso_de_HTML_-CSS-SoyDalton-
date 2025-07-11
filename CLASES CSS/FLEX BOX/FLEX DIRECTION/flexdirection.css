@@ -1,0 +1,49 @@
+/* 
+En Flexbox, la propiedad flex-direction define la dirección principal en la que se colocan los ítems flexibles dentro de un contenedor flex.
+
+En pocas palabras, decide si los ítems se apilan en fila (horizontalmente) o en columna (verticalmente).
+
+Valores principales:
+
+row (fila): Los ítems se colocan uno al lado del otro, de izquierda a derecha (por defecto).
+Ejemplo: display: flex; flex-direction: row;
+
+row-reverse (fila inversa): Los ítems se colocan uno al lado del otro, de derecha a izquierda.
+
+column (columna): Los ítems se apilan uno debajo del otro, de arriba hacia abajo.
+Ejemplo: display: flex; flex-direction: column;
+
+column-reverse (columna inversa): Los ítems se apilan uno debajo del otro, de abajo hacia arriba.
+Esta propiedad es fundamental para organizar el layout de tus elementos en Flexbox.
+*/
+
+body{
+      margin: 0;
+      background: #ccc;
+      font-family: sans-serif;
+      
+} 
+
+.flexbox{
+      display: flex;
+      flex-direction: row-reverse;
+}      
+
+.flex-item{
+      /*padding: 60px;*/ /* Si pongo paadion afecta el flexbox */
+      height: 60px;
+      width: 150px;
+      text-align: center;
+      background-color: #800;
+      margin: 10px;
+      font-size: 40px;
+      color:#fff
+} 
+
+.flex-item:first-child{
+      background-color: #f77;
+}
+
+.flex-item:nth-child(3){
+      background-color: #000;
+}     

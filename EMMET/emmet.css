@@ -13,9 +13,11 @@
   c#<color>: color 
   bgc: background Color
   bt: border top
+  ff: font-family
+  fs: font-size
 
 */
 
-header:{    
-    margin: 10px;
-}
+body{
+  margin: 10px;
+};    
