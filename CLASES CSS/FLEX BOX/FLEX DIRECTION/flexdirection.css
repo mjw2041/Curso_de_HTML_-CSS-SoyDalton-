@@ -26,13 +26,13 @@ body{
 
 .flexbox{
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
+      /* direction: ltr;*/ /* Opcional, para definir la dirección del texto */
 }      
 
 .flex-item{
-      /*padding: 60px;*/ /* Si pongo paadion afecta el flexbox */
-      height: 60px;
-      width: 150px;
+      /*padding: 60px;*/ /* Si pongo paadion afecta el flexbox */      
+      width: 180px;
       text-align: center;
       background-color: #800;
       margin: 10px;

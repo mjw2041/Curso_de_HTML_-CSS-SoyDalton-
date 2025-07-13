@@ -1,0 +1,52 @@
+/*
+1. flex-wrap
+Define si los ítems flexibles deben envolverse (pasar a la siguiente línea/columna) cuando no hay suficiente espacio en una sola línea.
+
+nowrap (por defecto): Los ítems intentan permanecer en una sola línea, encogiéndose si es necesario.
+
+wrap: Los ítems se envuelven a la siguiente línea cuando no hay espacio.
+
+wrap-reverse: Los ítems se envuelven en dirección inversa.
+
+2. flex-flow
+Es una propiedad abreviada que combina flex-direction y flex-wrap en una sola declaración.
+
+Sintaxis: flex-flow: <flex-direction> <flex-wrap>;
+
+Ejemplo: display: flex; flex-flow: row wrap; (ítems en fila y se envuelven)
+*/
+
+body{
+      background-color: #ccc;
+      margin: 0px;
+      font-family: sans-serif;
+}
+
+.flexbox{
+      display: flex;
+      /*
+         flex-direction: row;
+         flex-wrap: wrap; /* Permite que los ítems se envuelvan a la siguiente línea /      
+         direction: ltr;*/ /* Opcional, para definir la dirección del texto 
+      */
+      flex-flow: row wrap; /* Abreviatura de flex-direction y flex-wrap */
+      height: 100vh; /* Altura del contenedor flex */
+}      
+
+.flex-item{
+      /*padding: 60px;*/ /* Si pongo paadion afecta el flexbox */      
+      width: 150px;
+      text-align: center;
+      background-color: #800;
+      margin: 10px;
+      font-size: 40px;
+      color:#fff
+} 
+
+.flex-item:first-child{
+      background-color: #f77;
+}
+
+.flex-item:nth-child(3){
+      background-color: #000;
+}     

@@ -1,0 +1,79 @@
+/*
+En Flexbox, las propiedades de alineacion controlan como se distribuyen los items flexibles.
+
+1. justify-content
+Alinea los items a lo largo del eje principal (la direccion de flex-direction).
+
+flex-start (por defecto): Items al inicio.
+flex-end: Items al final.
+center: Items centrados.
+space-between: Items distribuidos uniformemente, extremos en los bordes.
+space-around: Items distribuidos uniformemente, con espacio alrededor.
+space-evenly: Items distribuidos con espacio igual entre ellos y los bordes.
+
+2. align-items
+Alinea los items a lo largo del eje transversal (perpendicular al eje principal), dentro de cada linea.
+
+stretch (por defecto): Items se estiran para llenar el contenedor.
+flex-start: Items al inicio del eje transversal.
+flex-end: Items al final del eje transversal.
+center: Items centrados en el eje transversal.
+baseline: Items alineados por sus lineas base de texto.
+
+3. align-self
+Alinea un item individual a lo largo del eje transversal, sobrescribiendo align-items del contenedor.
+
+Valores: Los mismos que align-items.
+
+4. align-content
+Alinea las lineas de items (cuando flex-wrap esta activo y hay varias lineas) a lo largo del eje transversal. No tiene efecto si hay una sola linea.
+
+stretch (por defecto): Lineas se estiran.
+flex-start: Lineas al inicio.
+flex-end: Lineas al final.
+center: Lineas centradas.
+space-between: Lineas distribuidas uniformemente, extremos en los bordes.
+space-around: Lineas distribuidas uniformemente, con espacio alrededor.
+space-evenly: Lineas distribuidas con espacio igual entre ellas y los bordes.
+*/
+
+body{
+      background-color: #ccc;
+      margin: 0px;
+      font-family: sans-serif;
+      box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+}
+
+div{
+      box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+}
+
+.flexbox{
+      display: flex;
+      /*
+         flex-direction: row;
+         flex-wrap: wrap; /* Permite que los ítems se envuelvan a la siguiente línea /      
+         direction: ltr;*/ /* Opcional, para definir la dirección del texto 
+      */
+      flex-flow: row wrap; /* Abreviatura de flex-direction y flex-wrap */
+      height: 100vh; /* Altura del contenedor flex */
+      border: #000 solid 1px; /* Añade un borde para visualizar el contenedor */
+}      
+
+.flex-item{
+      /*padding: 60px;*/ /* Si pongo paadion afecta el flexbox */      
+      width: 150px;
+      text-align: center;
+      background-color: #800;
+      margin: 10px;
+      font-size: 40px;
+      color:#fff
+} 
+
+.flex-item:first-child{
+      background-color: #f77;
+}
+
+.flex-item:nth-child(3){
+      background-color: #000;
+}     

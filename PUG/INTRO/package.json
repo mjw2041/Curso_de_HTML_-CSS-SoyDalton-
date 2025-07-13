@@ -1,0 +1,16 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "pug views --out public --pretty",
+    "watch": "pug views --out public --pretty --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.3"
+  }
+}
