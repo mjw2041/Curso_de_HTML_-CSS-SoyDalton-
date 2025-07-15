@@ -31,6 +31,7 @@ body{
       */
       flex-flow: row wrap; /* Abreviatura de flex-direction y flex-wrap */
       height: 100vh; /* Altura del contenedor flex */
+      
 }      
 
 .flex-item{

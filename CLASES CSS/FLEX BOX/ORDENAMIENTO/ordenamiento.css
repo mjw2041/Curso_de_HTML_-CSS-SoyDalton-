@@ -1,0 +1,50 @@
+/*
+   Order: permite 
+*/
+
+body{
+      background-color: #ccc;
+      margin: 0px;
+      font-family: sans-serif;
+      box-sizing: border-box; 
+}
+
+div{
+      box-sizing: border-box; 
+}
+
+.flexbox{
+      display: flex;            
+      flex-flow: row wrap; 
+      border: #000 solid 1px;      
+      margin: 30px;
+      background-color: #fff;
+      justify-content: center   ;
+      /*height: 500px; */            
+}      
+
+.flex-item{
+      padding: 10px; 
+      text-align: center;
+      background-color: #800; 
+      margin: 10px;
+      font-size: 30px;
+      color:#fff;
+      width: 70px;      
+} 
+
+.flex-item:first-child{
+      background-color: #f77;
+      order:3
+}
+
+.flex-item:nth-child(2){
+      background-color: brown;
+      order:1
+}     
+
+
+.flex-item:nth-child(3){
+      background-color: #000;
+      order:2
+}     

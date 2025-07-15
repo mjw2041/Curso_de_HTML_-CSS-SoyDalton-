@@ -49,25 +49,25 @@ div{
 }
 
 .flexbox{
-      display: flex;
-      /*
-         flex-direction: row;
-         flex-wrap: wrap; /* Permite que los ítems se envuelvan a la siguiente línea /      
-         direction: ltr;*/ /* Opcional, para definir la dirección del texto 
-      */
-      flex-flow: row wrap; /* Abreviatura de flex-direction y flex-wrap */
-      height: 100vh; /* Altura del contenedor flex */
+      display: flex;            
+      flex-flow: row wrap; /* Abreviatura de flex-direction y flex-wrap */      
       border: #000 solid 1px; /* Añade un borde para visualizar el contenedor */
+      justify-content: space-evenly;
+      margin: 30px;
+      height: 500px;      
+      align-items: center;
+      align-content: center;
 }      
 
 .flex-item{
-      /*padding: 60px;*/ /* Si pongo paadion afecta el flexbox */      
-      width: 150px;
+      padding: 20px;  /* Si pongo paadion afecta el flexbox */            
       text-align: center;
-      background-color: #800;
+      background-color: #800; 
       margin: 10px;
-      font-size: 40px;
-      color:#fff
+      font-size: 30px;
+      color:#fff;
+      width: 30px;
+      height: 70px;
 } 
 
 .flex-item:first-child{
