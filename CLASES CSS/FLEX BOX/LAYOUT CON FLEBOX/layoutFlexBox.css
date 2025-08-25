@@ -1,0 +1,90 @@
+body{    
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f80;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/** HEADER SECTION  */
+
+header{
+     height: 100vh;
+    /*
+        vh: Esta es la unidad de medida "Viewport Height" (Altura del Viewport). El "viewport" se refiere al área visible de la ventana del navegador (o la pantalla del dispositivo) por donde el usuario está viendo la página web en ese momento
+    */
+    box-sizing: border-box;
+    /*  
+    box-sizing: border-box; es una de las propiedades más importantes y útiles en CSS cuando se trata del modelo de caja de los elementos.
+    */
+    background-image: url("./starWar-3.webp");
+    background-size: cover; /* Agregué esto para que la imagen cubra todo el header */
+    background-position: center; /* Agregué esto para centrar la imagen */
+    background-repeat: no-repeat; /* Agregué esto para evitar que la imagen se repita */
+    /*background-size:contain;*/
+    display: flex;
+}
+
+h1{
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+    /**
+        text-wrap: balance; es una propiedad de CSS que le indica al navegador que distribuya el texto de manera uniforme en varias líneas, evitando que queden líneas excesivamente cortas o con una sola palabra ("huérfanas") al final de un bloque de texto.
+    */
+
+}
+
+.header_overlay{
+   height: 100vh;
+   width: 100%; 
+   background-color: #f809; 
+   position: absolute;
+   z-index: 1;
+}
+
+.header_item-container {
+    z-index: 10;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.header_item-container p{
+    text-wrap: pretty;
+    /**
+        text-wrap: balance; busca distribuir las palabras de manera uniforme entre las líneas para evitar líneas muy cortas o "huérfanas", text-wrap: pretty; se centra en la estética general y la legibilidad del texto.
+   */ 
+}    
+
+.header_img {
+   min-width: 200px;
+   max-width: 40%;
+   border-radius: 50%;
+   border: 6px solid #fff;
+   margin:20px;
+}
+
+div, header, nav, ul, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+/** NAVBAR SECTION */
+.nav {
+    background-color: #fff;    
+}
+
+.nav__ul{
+    margin: 0;    
+}
+
+.nav__item{
+    display: inline-block;    
+}   
+
+.nav__link{    
+    text-decoration: none;
+    display: inline-block;
+    color: #f80
+}   

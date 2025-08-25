@@ -1,0 +1,51 @@
+body, div{
+      box-sizing: border-box; 
+}
+
+.flexbox{
+      display: flex;            
+      flex-flow: row wrap; 
+      border: #000 solid 1px;      
+      margin: 20px;
+      height: 100px;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;   
+      gap: 20px;   /* Separacion entre elementos */
+}      
+
+.flex-item{      
+      text-align: center;
+      background-color: #800; 
+      /*margin: 10px;*/
+      font-size: 40px;
+      color:#fff;
+      width: 200px;
+      direction: rtl;
+      /*flex-shrink: 0;*/ /* Indica cuanto quiero que se encoja el elemento */
+      /*flex-basis: 150px; /* Determina el tamaño base */
+      /*flex-grow: 1;*/
+      flex: 1 0 150px /*Resume las 3 flex en un solo renglon flex_grow  flex_shrink flex_basis*/
+
+} 
+
+.flex-item:nth-child(odd){
+      background-color: #f77;  
+      /*flex-grow: 2;*/    /* Se agranda para ocupar el espacio sobrante */      
+}
+
+.flex-item:nth-child(even){
+      background-color: brown;      
+      /*flex-grow: 1;*/    /* Se agranda para ocupar el espacio sobrante */
+      /*flex-shrink: 2;*/ /* Indica cuanto quiero que se encoja el elemento */
+}     
+
+
+.flex-item:nth-child(30){
+      background-color: #000;
+      /*flex-grow: 4; */    /* Se agranda para ocupar el espacio sobrante */
+      flex-shrink: 3; /* Indica cuanto quiero que se encoja el elemento */
+      
+} 
+    
+
