@@ -1,0 +1,14 @@
+/* Este archivo contiene CSS personalizado que no se puede hacer con Tailwind */
+
+/* Definimos una clase para un borde personalizado */
+.custom-border {
+    border: 3px solid; /* Borde sólido de 3px */
+    border-color: #3b82f6; /* Usando un color azul de Tailwind (blue-500) */
+}
+
+/* Ejemplo de cómo anular una clase de Tailwind (opcional) */
+/*
+#container {
+    padding: 3rem !important;
+}
+*/
