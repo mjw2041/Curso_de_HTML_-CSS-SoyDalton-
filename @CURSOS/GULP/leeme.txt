@@ -1,0 +1,12 @@
+Curso: 
+https://www.youtube.com/watch?v=xE45euIRDr8&list=PLROIqh_5RZeDf1LgliebPZ_0TAX-QA_xm 
+
+Instalacion Unica <por la dudas revisar >
+npm install --- instalar npm   
+npm install --global gulp -cli  -- Instalacion del GULP
+
+
+Instalacion que se tiene que hacer en  cada proyec|to
+npm init -- Inicializar el proyecto
+npm install-dev gulp
+npm install --save-dev @babel/core @babel/register @babel/preset-env
