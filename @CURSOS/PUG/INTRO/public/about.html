@@ -1,0 +1,27 @@
+
+<!-- prepend se utiliza para agregar contenido antes del bloque definido en el template pug-->
+<!-- append se utiliza para agregar contenido despues del bloque definido en el template pug-->
+<!-- block se utiliza para definir el contenido del bloque definido en el template pug-->
+<!-- En los template se gurdan las estructuras comunes de las paginas-->
+<!-- como el header, footer, etc          -->
+<!-- El contenido de las paginas se inyecta en el bloque ( block content )-->
+<!-- mixin para definir componentes reutilizables--><!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document        </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>   
+    <header class="header">
+      <h1>Texto desde template pug !!!</h1>
+    </header>
+    <main class="main">
+      <p>Esta es la pagina About Us creada con PUG y usando un template pug.</p>
+    </main>
+    <footer class="footer">
+    </footer>
+  </body>
+</html>

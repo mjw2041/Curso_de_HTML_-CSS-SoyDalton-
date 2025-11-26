@@ -8,3 +8,5 @@ pug -w ./ -o ./HTML -P
 Repositorio GIT 
 URL https://github.com/DorianDesings/pug2019
 
+Proyecto
+CD c:\@CAPACITACION\Curso_HTML_CSS_SoyDalton\@CURSOS\PUG\INTRO\

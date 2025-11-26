@@ -1,0 +1,126 @@
+extends ../templates/template.pug   
+include ../mixins/links.pug
+include ../mixins/list.pug
+
+prepend header
+    h1 Texto desde index.pug !!! 
+
+block main      
+        // 3era Forma no muy utilizada pero valida
+        //header(style="background-color: green; padding: 10px; text-align: center;")
+            
+        // ( // ) se utiliza para indicar que es un comentario, 
+        // tener cuidado con la indentacion ya que es importante en pug.
+
+        h1 Hola Mundo ( CON TEMPLATE PUG )
+        
+        h2 Hola !!!
+            span !!! Mundo !!!!!        
+        div conteiner1          
+            div conteiner2
+                div conteiner3
+                    p Este es un parrafo dentro de varios contenedores anidados.    
+        ul 
+            li Item 1 
+            li Item 2
+            li Item 3 
+            li Item 4
+
+        a(href="https://www.example.com", target="_blank") Ir a Example.com            
+        p#parrafo parrafo con id.
+        p.class1.class2 parrafo con clases
+        p.class3#id2 parrafo con clase e id
+
+        // |  se utiliza para indicar que es hermano del texto anterior
+        // indentacion se utilizar para indicar que 
+
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur mollitia sequi, 
+            a(href="#") alias 
+            | anim
+            i itaque porro praesentium, voluptatum nostrum reprehenderit incidunt quisquam beatae earum repudiandae eius libero deserunt exercitationem provident voluptate cum iste, iure enim. Repellendus quos voluptatum facere, sint quasi assumenda, tempore consequatur pariatur blanditiis eveniet excepturi odio!
+        
+        ul.menu 
+            li.menu_item 
+                a(href="#").menu_link Home    
+        // Para Simplificar esto se usa ( : ) que indicar que un elemento  dentro va dentro de otro( padre : hijo )
+        
+        ul.menu: li.menu_item: a(href="#").menu_link Home  
+        
+        // 1era Forma de agregar JavaScript
+        // script(src="script.js")
+        // 2da Forma de agregar JavaScript
+        script.
+            const alert = () => {
+            alert('Hola desde PUG');
+            };  
+
+        // Definicion de una variable en PUG se antepone ( - )
+        -var nombre = 'SoyDalton'
+        -const numbers = [1, 2, 3, 4, 5]
+        -
+            const person = {
+                name: 'Dorian',
+                surname: 'Desings',
+                age: 30                    
+            };
+        // Para imprimir una variable en PUG se utiliza ( #{} )
+        h3 Hola #{nombre.toUpperCase()}
+        p= `Este es un parrafo de ${nombre}`
+        // Imprimir elementos de un arreglo en forma manual
+        ul
+            li= numbers[0]
+            li= numbers[1]
+            li= numbers[2]
+            li= numbers[3]
+            li= numbers[4]                 
+        p= `Mi nombre es ${person.name} ${person.surname} y tengo ${person.age} años.`    
+
+        // Condicionales en PUG
+        -const userName = false 
+        if userName
+            p Bienvenido usuario
+        else if userName === null 
+            p usario no existe
+        else     
+            p Registrese para continuar
+        // Operador Ternario en PUG
+        p= userName ? 'registered' : 'unregistered'    
+
+        // Operador de Negacion en PUG            
+        unless userName
+            p Por favor inicie sesion !!!!
+
+        // Ciclos en PUG
+        -const names = ['Dorian', 'Dalton', 'Desings', 'JavaScript', 'PUG']
+        
+        // 1era Forma de Ciclo ( for )
+        each name, index in names             
+            p= `${index}: ${name} !!`
+        else
+            span No hay nombres disponibles
+
+        // Recorrer un objeto con ( for in ) !!!
+        -
+            const person2 = {
+                name: 'Dorian',
+                email: 'dorian@emai.com'
+            };
+
+        each value, key in person2
+            p= `${key}: ${value}`
+
+        // 2da Forma de Ciclo ( while )
+        -let i = 0
+        ul 
+            while i < 5
+                li= `Elemento ${i + 1}`
+                -i++  
+        p= `Los nuevos nombre son (se guardan en el config.pug): `
+        each names in names_2
+            p= `${names} `       
+        p  Uso de Funciones o mixins
+            +link('https://www.google.com', 'Ir a Google')
+
+        p Lista de elementos usando mixin
+        ul 
+            +list(names_2)

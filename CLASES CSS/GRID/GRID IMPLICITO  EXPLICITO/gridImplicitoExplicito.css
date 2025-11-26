@@ -1,0 +1,24 @@
+body{
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #ccc;
+}
+
+.grid{
+      display: grid;
+      height: 80vh;
+      grid-template-columns: repeat(3,200px);
+      grid-template-rows: repeat(3,200px);
+      grid-auto-rows: 80px; /* Define el tamaños de la fias que se crean en forma automatica */
+      grid-auto-columns: 80px; /* Define el tamaños de la fias que se crean en forma automatica */
+      grid-auto-flow: column; 
+      /* Le indicamos que se cree columnas automaticamente, si no esta se crea filas */
+}
+
+.grid-item{
+      background-color: #48e;
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+      color: #fff
+}

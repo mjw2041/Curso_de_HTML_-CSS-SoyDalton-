@@ -13,4 +13,34 @@ img{
     max-width: 100%;
     height: auto;
 
+} 
+
+/* Forma vieja de hacer multimedia flexible */
+
+/*.contenedor {
+    position: relative;  /*Establish a positioning context for the video */
+    /*width: 100%;  */
+    /*padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    /*height: 0 ; */    
+/*} */
+
+
+/*video{*/
+    /* position: absolute;*/ /* Position the video absolutely within the container */
+    /* max-width: 100%; /* Set the width to 100% of the container */
+    /*top: 0; /* Align the top of the video to the top of the container */
+    /*left: 0; /* Align the left of the video to the left of the container */
+    
+/*}*/
+
+/* Nueva forma de hacer multimedia flexible */
+.container {
+    max-width: 100%;    
+    margin: auto;
+    aspect-ratio: 16/9; /* Mantener la relacion de aspecto 16:9 */
+}   
+
+video{
+    width: 100%;
+ 
 }

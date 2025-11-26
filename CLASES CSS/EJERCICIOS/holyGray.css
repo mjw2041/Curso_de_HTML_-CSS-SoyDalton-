@@ -1,0 +1,127 @@
+body{
+      margin: 0;
+      background-color: #ededed;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      min-height: 100vh; 
+}
+
+div, body, header, nav, ul, footer{
+      box-sizing: border-box;
+}
+
+.main-wrapper, header, footer {      
+      width: 100%;
+      flex-grow: 1;
+
+}
+
+/* HEADER */
+.header{      
+      background-color: #48e;
+}
+
+.main-navbar ul{
+      display: flex;
+      padding: 0;      
+}
+
+
+.main-navbar li {
+      list-style: none;
+      margin: 4px;
+}
+
+.main-navbar a {
+      color: #fff;
+      display: inline-block; 
+      padding: 6px 9px ; 
+}
+
+
+nav a {
+      text-decoration: none;
+}
+
+/* MAIN SECTION */
+
+.main-wrapper {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+
+}
+
+aside, main {
+      padding: 10px 20px;
+}
+
+main{
+      min-width: 300px;
+}
+.main-wrapper aside {
+      flex-grow: 1;
+}
+
+.secondary-navbar{
+      min-width: 12rem;
+      text-align: center;
+}
+
+.secondary-navbar ul{
+    padding: 0;  
+}
+
+.secondary-navbar li{
+       list-style:none;
+}
+
+
+
+.secondary-navbar a{
+       color: #48e;
+       display: inline-block;
+       padding: 6px 10px;
+}
+
+aside.last-child {
+      min-width: 10rem;
+}
+
+/* FOOTER*/
+
+footer {
+      margin-top: auto;
+      border: 1px solid #f00;
+      background-color: #333;
+      color: #fff;
+      padding: 40px;
+}
+
+/* MEDIA */
+      
+@media screen and (max-width: 800px){     
+     aside:last-child {
+            display:none
+     }
+}
+
+/* Esto no funciona nose porque */
+
+@media screen and (max-width: 600px){
+    /* 1. Cambiar la dirección a columna */
+     .main-wrapper {
+             flex-direction: column;
+     }
+
+     /* 2. Asegurar que los hijos (aside, main) ocupen todo el ancho */
+     .main-wrapper > aside,
+     .main-wrapper > main {
+        width: 100%;
+        min-width: unset; /* Anular el min-width de main */
+     }
+}

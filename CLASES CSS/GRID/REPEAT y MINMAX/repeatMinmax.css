@@ -1,0 +1,24 @@
+body{
+      margin: 0;  
+      font-family: sans-serif;
+      background-color: #ccc;
+}
+
+.grid {
+      display: grid;
+      height: 100vh;
+      /* grid-template-columns: 300px repeat(2, 1fr) 100px; */
+      /* grid-template-columns: 300px 300px  minmax(200px, 700px);*/
+      grid-template-columns: repeat(2, minmax(100px, 200px)) 1fr; 
+      /* grid-template-columns: repeat(2, 1fr 2fr); Repite patrones*/
+      grid-template-rows: repeat(2, 100px) 1fr; 
+}
+
+.grid-item {
+      background-color: #48e;
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+      color: #fff
+
+}

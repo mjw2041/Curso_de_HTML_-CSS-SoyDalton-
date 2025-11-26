@@ -1,0 +1,40 @@
+body{
+      background-color: #ccc;
+      margin: 0;
+      font-family: sans-serif;
+}
+
+.grid {
+      display: grid; /* Definicion de GRID */
+      grid-template-columns: auto auto 200px; /* Define el tamaño y cantidad de columna */      
+        /*  el primer valor de la primer columnas, el segundo valor de la segunda
+           y asi sucesivamente  */
+      grid-template-rows: 100px 100px; /* Define el tamaño y cantidad de filas */          
+
+}
+
+.grid-item{
+      background-color: #48e;
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+      color: #fff;      
+      display: inline-block;
+
+}
+
+.grid-fr {
+      display: grid; /* Definicion de GRID */
+      grid-template-columns: 4fr 2fr 1fr;          
+      grid-template-rows: 100px 100px; 
+}
+
+.grid-fr-item{
+      background-color: #8a1;
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+      color: #fff;      
+      display: inline-block;
+
+} 

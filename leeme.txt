@@ -1,6 +1,10 @@
 URL: 
 https://www.youtube.com/watch?v=ELSm-G201Ls&t=17478s
 
+Lo deje en GRID FLOW DENSE (16:14 )
+
+Mi Repositorio GIT 
+==================
 echo "# Curso_de_HTML_-CSS-SoyDalton-" >> README.md
 git init
 git add README.md
@@ -22,6 +26,3 @@ git checkout -b <nombre-de-tu-rama>  # Opcional: crear y cambiar a una nueva ram
 git add <nombre-del-archivo>         # O git add . para agregar todos los cambios
 git commit -m "<Tu mensaje descriptivo>"
 git push origin <nombre-de-tu-rama>  # O git push origin main/master si trabajaste en la rama principal
-
-Prueba desde Santiago PC
-Ahora desde git hub

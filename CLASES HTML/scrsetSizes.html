@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/scrsetSizes.css">
+      <title>Atributos - Scrset y Sizes</title>
+</head>
+<body>
+      <h1>Atributos Scrset y Sizes</h1>
+      <img 
+            src="../IMAGENES/img-small.jpg" 
+            srcset="
+                  ../IMAGENES/img-small.jpg 300w,
+                  ../IMAGENES/img-medium.jpg 600w,
+                  ../IMAGENES/img.jpg 900w
+            "
+            <!-- Le indica cual es la imagen que tiene que subir por la calidad de pantalla -->            
+            sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px"
+            <!-- Le dice cual es el maximo de px segun el tamaño -->                  
+            alt="Imagen de ejemplo con scrset y sizes">
+</body>
+</html>

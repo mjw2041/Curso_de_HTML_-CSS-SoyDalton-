@@ -1,0 +1,25 @@
+$color: lightgray;
+
+body {
+   background-color: $color;
+   
+   @media screen and (max-width: 768px) {
+       background-color: blue;
+  }
+}
+
+.red-text {
+   color: red
+}  
+
+.blue {
+   color: blue
+}  
+
+.yellow-bg {
+   background-color: yellow
+}
+
+.green-border {
+   border: 2px solid green
+}  

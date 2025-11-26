@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="unidadesAutoFr.css">
+      <title>Unidades Auto FR</title>
+</head>
+<body>
+     <!--  1. La Unidad fr (Fraction).El término fr significa fracción (fraction).
+           Es una unidad de medida flexible que distribuye el espacio restante del contenedor 
+           de la cuadrícula entre las columnas.
+           El espacio disponible se divide en el número total de fracciones especificadas.
+           Ejemplo: En grid-template-columns: 1fr 2fr 1fr;La cuadrícula se divide en $1 + 2 + 1 = 4$ 
+           fracciones.La primera y la tercera columna toman $1/4$ del espacio restante cada una.
+           La segunda columna toma $2/4$ (o $1/2$) del espacio restante.
+           Propósito: Crear columnas que se redimensionan proporcionalmente para ocupar todo el espacio libre.
+
+           2. La Palabra Clave auto.El término auto significa automático. 
+           Es una palabra clave que asigna el ancho de la columna de manera automática basándose en su contenido 
+           y el espacio restante.¿Cómo funciona? El ancho se calcula en dos fases:
+           Prioridad al contenido: La columna auto se ajusta inicialmente para ser lo suficientemente grande para 
+           contener su contenido más grande.Reparto de espacio sobrante: 
+           Después de que las columnas fr se han dimensionado y las columnas de tamaño fijo/contenido se han ajustado, 
+           si queda espacio, las columnas auto comparten el espacio sobrante equitativamente (comportándose como 1fr en ese caso).
+           Propósito: Permitir que la columna se adapte al tamaño del contenido, y luego actúe 
+           como una columna flexible si sobra espacio           
+      -->       
+    <h1>Unidades Auto FR</h1>  
+    <div class="grid">
+      <div class="grid-item">12121212121</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div> 
+    
+    <div class="grid-fr">
+      <div class="grid-fr-item">1</div>
+      <div class="grid-fr-item">2</div>
+      <div class="grid-fr-item">3</div>
+      <div class="grid-fr-item">4</div>
+      <div class="grid-fr-item">5</div>
+      <div class="grid-fr-item">6</div>
+    </div>    
+</body>
+</html>

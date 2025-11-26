@@ -1,0 +1,24 @@
+body{
+      margin:0;
+      font-family: sans-serif;
+      background-color: #ccc; 
+}
+
+.grid {
+      display: grid; /* Definicion de GRID */
+      grid-template-columns: 60px 200px 400px; /* Define el tamaño y cantidad de columna */      
+        /*  el primer valor de la primer columnas, el segundo valor de la segunda
+           y asi sucesivamente  */
+      grid-template-rows: 100px 200px; /* Define el tamaño y cantidad de filas */          
+      direction: rtl; /* Direccion de los GRID */
+}
+
+.grid-item{
+      background-color: #48e;
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+      color: #fff;      
+      display: inline-block;
+
+}

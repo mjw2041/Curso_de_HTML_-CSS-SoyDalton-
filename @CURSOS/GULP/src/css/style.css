@@ -1,0 +1,18 @@
+body{
+      margin: 0;
+      padding: 0;
+      background-color: red;
+      font-family: Arial, sans-serif;           
+      border-radius: 20px;
+      margin: 20px 10px 20px 10px
+}
+
+.body{
+      color: white;
+      display: flex;
+}
+
+.body_2{
+      color: white;
+      display: flex;
+}

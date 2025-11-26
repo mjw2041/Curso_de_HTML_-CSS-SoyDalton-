@@ -1,0 +1,45 @@
+body{
+      background-color: grey;
+}
+
+div, body {
+      box-sizing: border-box; /* Incluye el padding y border en el ancho y alto total */
+}
+
+
+
+.flexbox{
+      display: flex;  /* Activar Flexbox */          
+      gap: 10px;  /* Espacio entre los elementos flex */
+      flex-direction: row;  /* Dirección de los elementos flex en fila */ 
+      flex-grow: 1;  /* Permite que los elementos crezcan para llenar el espacio disponible */  
+}
+
+.flex-item{
+      background-color: #ccc;
+      padding: 30px;
+      border: 1px solid red;      
+}
+
+
+@media screen and (max-width: 600px) {
+      body {
+            background-color: #ccc;
+            font-size: 200pt;
+      } 
+}
+
+@media screen and (max-width: 800px) {
+      body {
+            background-color: yellowgreen;          
+            flex-direction: colunm; /* Cambia la dirección de los elementos flex a columna */
+      } 
+}
+
+@media print {
+      body {
+            font-size: 200pt;
+      } 
+}
+
+

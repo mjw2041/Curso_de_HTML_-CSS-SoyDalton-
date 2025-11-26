@@ -1,6 +1,8 @@
 Curso: 
 https://www.youtube.com/watch?v=xE45euIRDr8&list=PLROIqh_5RZeDf1LgliebPZ_0TAX-QA_xm 
 
+Proyecto C:\@CAPACITACION\Curso_HTML_CSS_SoyDalton\@CURSOS\GULP\
+
 Instalacion Unica <por la dudas revisar >
 npm install --- instalar npm   
 npm install --global gulp -cli  -- Instalacion del GULP
@@ -10,3 +12,73 @@ Instalacion que se tiene que hacer en  cada proyec|to
 npm init -- Inicializar el proyecto
 npm install-dev gulp
 npm install --save-dev @babel/core @babel/register @babel/preset-env
+
+guip-babel
+Este mmodulo que usara el guip convertir el codigo en es5
+npm install --save -dev gulp-babel
+
+gulp-terser
+Sirve para ofuscar el codigo
+npm install --save -dev gulp-terser
+
+gulp-concat 
+Une todos los archivo js en un solo
+npm install --save -dev gulp-concat
+
+HTML
+Minifica y limpia nuestro HTML
+npm install --save -dev gulp-html-minifier
+
+CSS
+
+npm install --save -dev gulp-postcss cssnano autoprefixer
+Para utilizar autoprefixer hay dos opciones, o añadir los
+navegadores a los que quieres dar soporte al package json
+o hacerlo por separado.
+.browserslistrc
+
+PUG 
+npm install --save -dev gulp-pug
+
+
+
+SASS
+npm install sass --save-dev
+npm install --save -dev gulp-dart-sass
+npm install --save -dev gulp-sass
+npm install --save -dev gulp-purgecss
+const sass = require('gulp-sass')(require('sass'));
+
+Limpiar la CACHE
+npm install --save -dev gulp-cache-bust
+
+COMPRIMIR IMAGENES
+npm install --save -dev gulp-imagemin
+
+SINCRONIZAR BROWSER
+npm install --save -dev browser-sync
+
+Gulp plumber evita las caidas abruptas
+npm install --save -dev gulp-plumber
+
+
+===============================================================================
+
+Nota: 
+1> No comprime en un sola linea los archivos SASS cuando los 
+convierte en css. SEgun geminis tengo que usar nano.
+
+2> Cuando se usar PUG y HTML puro y estan en el mismo directorio 
+no funciono correctamente, los tuve que separar, 
+
+3> lo que enseña en el ultimo video no funciona, 
+aparecen ... abajo de la primera letra cuando hago
+la importacion, no entiendo porque. 
+Ver en el futuro lo que pasa. 
+
+
+
+
+
+
+

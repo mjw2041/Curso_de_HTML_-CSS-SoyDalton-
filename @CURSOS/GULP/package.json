@@ -12,6 +12,31 @@
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
     "@babel/register": "^7.28.3",
-    "gulp": "^5.0.1"
+    "@types/gulp": "^4.0.18",
+    "@types/gulp-babel": "^6.1.33",
+    "@types/gulp-concat": "^0.0.37",
+    "@types/gulp-imagemin": "^8.0.6",
+    "@types/gulp-postcss": "^8.0.6",
+    "@types/gulp-sass": "^6.0.0",
+    "@types/gulp-terser": "^1.2.6",
+    "gulp": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "sass": "^1.94.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.22",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-purgecss": "^7.0.2",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0"
   }
 }

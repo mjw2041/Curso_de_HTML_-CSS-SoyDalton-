@@ -1,12 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!-- prepend se utiliza para agregar contenido antes del bloque definido en el template pug-->
+<!-- append se utiliza para agregar contenido despues del bloque definido en el template pug-->
+<!-- block se utiliza para definir el contenido del bloque definido en el template pug-->
+<!-- En los template se gurdan las estructuras comunes de las paginas-->
+<!-- como el header, footer, etc          -->
+<!-- El contenido de las paginas se inyecta en el bloque ( block content )-->
+<!-- mixin para definir componentes reutilizables--><!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document        </title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>title</h1>
+  <body>   
+    <header class="header">
+      <h1>Texto desde index.pug !!! </h1>
+      <h1>Texto desde template pug !!!</h1>
+    </header>
+    <main class="main">
+      <!-- 3era Forma no muy utilizada pero valida-->
+      <!--header(style="background-color: green; padding: 10px; text-align: center;")-->
+      <!-- ( // ) se utiliza para indicar que es un comentario, -->
+      <!-- tener cuidado con la indentacion ya que es importante en pug.-->
+      <h1>Hola Mundo ( CON TEMPLATE PUG )</h1>
+      <h2>Hola !!!<span>!!! Mundo !!!!!        </span></h2>
+      <div>conteiner1          
+        <div>conteiner2
+          <div>conteiner3
+            <p>Este es un parrafo dentro de varios contenedores anidados.    </p>
+          </div>
+        </div>
+      </div>
+      <ul> 
+        <li>Item 1 </li>
+        <li>Item 2</li>
+        <li>Item 3 </li>
+        <li>Item 4</li>
+      </ul><a href="https://www.example.com" target="_blank">Ir a Example.com            </a>
+      <p id="parrafo">parrafo con id.</p>
+      <p class="class1 class2">parrafo con clases</p>
+      <p class="class3" id="id2">parrafo con clase e id</p>
+      <!-- |  se utiliza para indicar que es hermano del texto anterior-->
+      <!-- indentacion se utilizar para indicar que -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur mollitia sequi, <a href="#">alias </a>anim<i>itaque porro praesentium, voluptatum nostrum reprehenderit incidunt quisquam beatae earum repudiandae eius libero deserunt exercitationem provident voluptate cum iste, iure enim. Repellendus quos voluptatum facere, sint quasi assumenda, tempore consequatur pariatur blanditiis eveniet excepturi odio!</i></p>
+      <ul class="menu"> 
+        <li class="menu_item"> <a class="menu_link" href="#">Home    </a></li>
+      </ul>
+      <!-- Para Simplificar esto se usa ( : ) que indicar que un elemento  dentro va dentro de otro( padre : hijo )-->
+      <ul class="menu">
+        <li class="menu_item"><a class="menu_link" href="#">Home  </a></li>
+      </ul>
+      <!-- 1era Forma de agregar JavaScript-->
+      <!-- script(src="script.js")-->
+      <!-- 2da Forma de agregar JavaScript-->
+      <script>
+        const alert = () => {
+        alert('Hola desde PUG');
+        };  
+        
+      </script>
+      <!-- Definicion de una variable en PUG se antepone ( - )-->
+      <!-- Para imprimir una variable en PUG se utiliza ( #{} )-->
+      <h3>Hola SOYDALTON</h3>
+      <p>Este es un parrafo de SoyDalton</p>
+      <!-- Imprimir elementos de un arreglo en forma manual-->
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <p>Mi nombre es Dorian Desings y tengo 30 años.</p>
+      <!-- Condicionales en PUG-->
+      <p>Registrese para continuar</p>
+      <!-- Operador Ternario en PUG-->
+      <p>unregistered</p>
+      <!-- Operador de Negacion en PUG            -->
+      <p>Por favor inicie sesion !!!!</p>
+      <!-- Ciclos en PUG-->
+      <!-- 1era Forma de Ciclo ( for )-->
+      <p>0: Dorian !!</p>
+      <p>1: Dalton !!</p>
+      <p>2: Desings !!</p>
+      <p>3: JavaScript !!</p>
+      <p>4: PUG !!</p>
+      <!-- Recorrer un objeto con ( for in ) !!!-->
+      <p>name: Dorian</p>
+      <p>email: dorian@emai.com</p>
+      <!-- 2da Forma de Ciclo ( while )-->
+      <ul> 
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+      </ul>
+      <p>Los nuevos nombre son (se guardan en el config.pug): </p>
+      <p>Dorian </p>
+      <p>Laura </p>
+      <p>Carlos </p>
+      <p> Uso de Funciones o mixins<a href="https://www.google.com">Ir a Google</a>
+      </p>
+      <p>Lista de elementos usando mixin</p>
+      <ul> 
+        <li>Dorian</li>
+        <li>Laura</li>
+        <li>Carlos</li>
+      </ul>
+    </main>
+    <footer class="footer">
+    </footer>
   </body>
 </html>
