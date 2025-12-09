@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de YouTube Incrustado</title>
+    <style>
+        /* Estilos CSS corregidos para centrar el contenido verticalmente */
+        body {
+            /* Usamos flex-direction: column para apilar elementos (H1, video) */
+            display: flex;
+            flex-direction: column; 
+            /* Centrar horizontalmente */
+            align-items: center; 
+            /* Altura mínima de la ventana */
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif;
+            padding-top: 20px; /* Pequeño espacio superior para el H1 */
+        }
+        
+        h1 {
+            /* Estilo para el título */
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .video-container {
+            /* Contenedor para mantener la proporción 16:9 del video */
+            position: relative;
+            width: 80%; 
+            max-width: 854px; 
+            /* Este es el truco para la proporción 16:9 (altura = 56.25% del ancho) */
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            /* El iframe ocupa todo el espacio del contenedor */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0; 
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>🎞️ Video Reproduccion</h1>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/6IwUl-4pAzc?autoplay=1&mute=1" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
